@@ -21,11 +21,13 @@ export const OPTIONS: RequestHandler = async () => {
 
 export const POST: RequestHandler = async ({ request }) => {
   const key = request.headers.get("Authorization");
-  if (key !== `${WEBHOOK_VERIFY_TOKEN}`) {
-    return new Response("Forbidden", { status: 403 });
-  }
-  const { type, phone_number, image_url } = await request.json();
+  console.log("Booth request key:", key);
 
+//   if (key !== `${WEBHOOK_VERIFY_TOKEN}`) {
+//     return new Response("Forbidden", { status: 403 });
+//   }
+  const { type, phone_number, image_url } = await request.json();
+console.log("Booth request body:", { type, phone_number, image_url });
   if (type !== "send_image") {
     await sendTemplateMessage(phone_number);
     return json({ ok: true });
