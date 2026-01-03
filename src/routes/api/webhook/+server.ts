@@ -71,12 +71,12 @@ export const POST: RequestHandler = async ({ request }) => {
 
         if (mg === "complete") {
           await sendImageMessage(from, url);
+        } else {
+          await UpdateDoc("adidas", from, {
+            user_status: "waiting",
+            img_status: "pending",
+          });
         }
-      } else {
-        await UpdateDoc("adidas", from, {
-          user_status: "waiting",
-          img_status: "pending",
-        });
       }
 
       return json({ success: true });
