@@ -57,6 +57,16 @@ export const POST: RequestHandler = async ({ request }) => {
     return json({ ok: true });
   }
 
+  if (["button"].includes(message.type)) {
+    const from = message.from; // wa_id (phone without +)
+
+     const button = message.button?.payload;
+    if (button === "Get your look") {
+      await sendImageMessage(from);
+      return json({ success: true });
+    }
+  }
+
   // Only respond to user messages (text, image, etc.)
   if (!["text", "image", "audio", "video", "document"].includes(message.type)) {
     return json({ ok: true });
@@ -71,6 +81,41 @@ export const POST: RequestHandler = async ({ request }) => {
 
   return json({ success: true });
 };
+
+async function sendImageMessage(to: string) {
+  try {
+    const res = await fetch(
+      `https://graph.facebook.com/v24.0/${PHONE_NUMBER_ID}/messages`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${WHATSAPP_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messaging_product: "whatsapp",
+          recipient_type: "individual",
+          to,
+          type: "image",
+          image: {
+            link: "https://d3u0tzju9qaucj.cloudfront.net/28f1490f-8e1c-47ed-b0c8-b428ef1a791f/825d86fd-e7f2-4e2f-b235-3409591b64fb.png",
+          },
+        }),
+      }
+    );
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error("Error sending template:", data);
+      return;
+    }
+
+    console.log("Template sent:", data);
+  } catch (err) {
+    console.error("Network error:", err);
+  }
+}
 
 // Function to send a template message
 async function sendTemplateMessage(to: string) {
