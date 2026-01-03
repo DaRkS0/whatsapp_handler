@@ -5,6 +5,7 @@ import {
   WHATSAPP_TOKEN,
   PHONE_NUMBER_ID,
 } from "$env/static/private";
+import { GetDoc, UpdateDoc } from "$lib/firebase/database/client";
 
 export const GET: RequestHandler = ({ url }) => {
   const mode = url.searchParams.get("hub.mode");
@@ -60,9 +61,24 @@ export const POST: RequestHandler = async ({ request }) => {
   if (["button"].includes(message.type)) {
     const from = message.from; // wa_id (phone without +)
 
-     const button = message.button?.payload;
+    const button = message.button?.payload;
     if (button === "Get your look") {
-      await sendImageMessage(from);
+      const uuser = await GetDoc("adidas", from);
+
+      if (uuser.exists()) {
+        const mg = uuser.get("img_status");
+        const url = uuser.get("url");
+
+        if (mg === "complete") {
+          await sendImageMessage(from, url);
+        }
+      } else {
+        await UpdateDoc("adidas", from, {
+          user_status: "waiting",
+          img_status: "pending",
+        });
+      }
+
       return json({ success: true });
     }
   }
@@ -82,7 +98,7 @@ export const POST: RequestHandler = async ({ request }) => {
   return json({ success: true });
 };
 
-async function sendImageMessage(to: string) {
+async function sendImageMessage(to: string, link: string) {
   try {
     const res = await fetch(
       `https://graph.facebook.com/v24.0/${PHONE_NUMBER_ID}/messages`,
@@ -98,7 +114,7 @@ async function sendImageMessage(to: string) {
           to,
           type: "image",
           image: {
-            link: "https://d3u0tzju9qaucj.cloudfront.net/28f1490f-8e1c-47ed-b0c8-b428ef1a791f/825d86fd-e7f2-4e2f-b235-3409591b64fb.png",
+            link,
           },
         }),
       }

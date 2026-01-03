@@ -1,0 +1,52 @@
+import { json, type RequestHandler } from "@sveltejs/kit";
+import {
+  WEBHOOK_VERIFY_TOKEN,
+  WHATSAPP_TOKEN,
+  PHONE_NUMBER_ID,
+} from "$env/static/private";
+
+export const POST: RequestHandler = async ({ request }) => {
+  const key = request.headers.get("Authorization");
+  if (key !== `${WEBHOOK_VERIFY_TOKEN}`) {
+    return new Response("Forbidden", { status: 403 });
+  }
+  const { phone_number, image_url } = await request.json();
+  await sendImageMessage(phone_number, image_url);
+
+  return json({ ok: true });
+};
+
+async function sendImageMessage(to: string, link: string) {
+  try {
+    const res = await fetch(
+      `https://graph.facebook.com/v24.0/${PHONE_NUMBER_ID}/messages`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${WHATSAPP_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messaging_product: "whatsapp",
+          recipient_type: "individual",
+          to,
+          type: "image",
+          image: {
+            link,
+          },
+        }),
+      }
+    );
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error("Error sending template:", data);
+      return;
+    }
+
+    console.log("Template sent:", data);
+  } catch (err) {
+    console.error("Network error:", err);
+  }
+}
