@@ -90,6 +90,21 @@ async function sendTemplateMessage(to: string) {
           template: {
             name: "photo_booth_init", // approved template
             language: { code: "en" },
+            components: [
+              {
+                type: "body",
+                parameters: [
+                  {
+                    type: "text",
+                    text: "Adidas",
+                  },
+                  {
+                    type: "text",
+                    text: "Adidas",
+                  },
+                ],
+              },
+            ],
           },
         }),
       }
