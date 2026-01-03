@@ -5,6 +5,20 @@ import {
   PHONE_NUMBER_ID,
 } from "$env/static/private";
 
+
+const corsHeaders = {
+	'Access-Control-Allow-Origin': '*', // or specific domain
+	'Access-Control-Allow-Methods': 'POST, OPTIONS',
+	'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+};
+
+export const OPTIONS: RequestHandler = async () => {
+	return new Response(null, {
+		status: 204,
+		headers: corsHeaders
+	});
+};
+
 export const POST: RequestHandler = async ({ request }) => {
   const key = request.headers.get("Authorization");
   if (key !== `${WEBHOOK_VERIFY_TOKEN}`) {
