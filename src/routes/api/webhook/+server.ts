@@ -89,7 +89,7 @@ async function sendTemplateMessage(to: string) {
           type: "template",
           template: {
             name: "photo_booth_init", // approved template
-            language: { code: "en_US" },
+            language: { code: "en" },
           },
         }),
       }
