@@ -62,7 +62,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const from = message.from; // wa_id (phone without +)
 
     const button = message.button?.payload;
-    if (button === "Get your look") {
+    if (button === "Get My Photo") {
       const uuser = await GetDoc("adidas", from);
 
       if (uuser.exists()) {
