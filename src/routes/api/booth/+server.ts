@@ -5,29 +5,28 @@ import {
   PHONE_NUMBER_ID,
 } from "$env/static/private";
 
-
 const corsHeaders = {
-	'Access-Control-Allow-Origin': '*', // or specific domain
-	'Access-Control-Allow-Methods': 'POST, OPTIONS',
-	'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+  "Access-Control-Allow-Origin": "*", // or specific domain
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
 };
 
 export const OPTIONS: RequestHandler = async () => {
-	return new Response(null, {
-		status: 204,
-		headers: corsHeaders
-	});
+  return new Response(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
 };
 
 export const POST: RequestHandler = async ({ request }) => {
   const key = request.headers.get("Authorization");
   console.log("Booth request key:", key);
 
-//   if (key !== `${WEBHOOK_VERIFY_TOKEN}`) {
-//     return new Response("Forbidden", { status: 403 });
-//   }
+  //   if (key !== `${WEBHOOK_VERIFY_TOKEN}`) {
+  //     return new Response("Forbidden", { status: 403 });
+  //   }
   const { type, phone_number, image_url } = await request.json();
-console.log("Booth request body:", { type, phone_number, image_url });
+  console.log("Booth request body:", { type, phone_number, image_url });
   if (type !== "send_image") {
     await sendTemplateMessage(phone_number);
     return json({ ok: true });
@@ -62,11 +61,11 @@ async function sendTemplateMessage(to: string) {
                 parameters: [
                   {
                     type: "text",
-                    text: "Adidas",
+                    text: "Cairo ICT ",
                   },
                   {
                     type: "text",
-                    text: "Adidas",
+                    text: "Cairo ICT ",
                   },
                 ],
               },
