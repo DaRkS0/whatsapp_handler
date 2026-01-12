@@ -93,7 +93,7 @@ export const POST: RequestHandler = async ({ request }) => {
   const text = message.text?.body?.toLowerCase();
   const button = message.button?.payload;
 
-  await sendTemplateMessage(from);
+  //await sendTemplateMessage(from);
 
   return json({ success: true });
 };
