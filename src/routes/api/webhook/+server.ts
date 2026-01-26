@@ -62,6 +62,15 @@ export const POST: RequestHandler = async ({ request }) => {
     const from = message.from; // wa_id (phone without +)
 
     const button = message.button?.payload;
+    if (button === "Tell me how it works") {
+      await sendTextMessage(from)
+      await sendImageMessage(
+        from,
+        "https://fra1.digitaloceanspaces.com/ekaterra-test/Vodafone-Summer-2025/smiles.png",
+      );
+
+      return json({ success: true });
+    }
     if (button === "Get My Photo") {
       const uuser = await GetDoc("adidas", from);
 
@@ -93,7 +102,7 @@ export const POST: RequestHandler = async ({ request }) => {
   const text = message.text?.body?.toLowerCase();
   const button = message.button?.payload;
 
-  //await sendTemplateMessage(from);
+  await sendTemplateMessage(from);
 
   return json({ success: true });
 };
@@ -117,7 +126,7 @@ async function sendImageMessage(to: string, link: string) {
             link,
           },
         }),
-      }
+      },
     );
 
     const data = await res.json();
@@ -149,7 +158,7 @@ async function sendTemplateMessage(to: string) {
           to,
           type: "template",
           template: {
-            name: "photo_booth_init", // approved template
+            name: "smilesinc_adv", // approved template
             language: { code: "en" },
             components: [
               {
@@ -159,16 +168,62 @@ async function sendTemplateMessage(to: string) {
                     type: "text",
                     text: "Adidas",
                   },
-                  {
-                    type: "text",
-                    text: "Adidas",
-                  },
                 ],
               },
             ],
           },
         }),
-      }
+      },
+    );
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      console.error("Error sending template:", data);
+      return;
+    }
+
+    console.log("Template sent:", data);
+  } catch (err) {
+    console.error("Network error:", err);
+  }
+}
+
+async function sendTextMessage(to: string) {
+  try {
+    const res = await fetch(
+      `https://graph.facebook.com/v24.0/${PHONE_NUMBER_ID}/messages`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${WHATSAPP_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messaging_product: "whatsapp",
+          to,
+          recipient_type: "individual",
+          type: "text",
+          text: {
+            preview_url: false,
+            body: `Here’s the full flow 👇
+1 - You share the guest list (Name + Mobile) 
+2 - We push the invite message on WhatsApp 📩
+3 - The attendee taps the button confirming that they are interested to attend 👆
+4 - They instantly receive their personal QR code for entry ✅
+
+Along with the QR, we can include a personalized message like: date, time, dress code, location, Google Maps...📍
+
+
+If you want to try it on an upcoming event, message me directly — Ahmad Shokry | 01227161213 — not this bot. 🙌
+
+*Meta note: We use a generic approved sender name. A fully branded sender name (brand-specific) needs Meta approval paperwork and can take time; until approved, we stick to the generic name.
+
+🚫 This service is available for non-alcohol and non-tobacco/IQOS events only ✅
+`,
+          },
+        }),
+      },
     );
 
     const data = await res.json();
