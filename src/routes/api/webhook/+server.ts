@@ -166,7 +166,7 @@ async function sendTemplateMessage(to: string) {
                 parameters: [
                   {
                     type: "text",
-                    text: "Adidas",
+                    text: "Client Name Here!!",
                   },
                 ],
               },
