@@ -74,7 +74,7 @@ export const POST: RequestHandler = async ({ request }) => {
       return json({ success: true });
     }
        if (button === "تأكيد") {
-      await sendImageMessage(from, "https://tse4.mm.bing.net/th/id/OIP.ZFt9Ib6ypFgdYK14UxUAhwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+      await sendImageMessage(from, "https://i.ibb.co/wr8S0Ncq/image-0-1.png");
      return json({ success: true });
     }
     if (button === "Get My Photo") {
