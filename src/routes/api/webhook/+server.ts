@@ -111,9 +111,13 @@ export const POST: RequestHandler = async ({ request }) => {
   const button = message.button?.payload;
 
   // await sendTemplateMessage(from);
+        const TEST = await QRCode.toDataURL(from);
 
-  return json({ success: true });
-};
+ await sendTextMessage(from);
+      // await sendImageMessage(from, TEST);
+      await sendImageMessageAlt(from,TEST);
+      return json({ success: true });
+ };
 
 async function sendImageMessage(to: string, link: string) {
   try {
