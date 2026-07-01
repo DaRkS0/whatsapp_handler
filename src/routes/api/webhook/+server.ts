@@ -75,8 +75,11 @@ export const POST: RequestHandler = async ({ request }) => {
     if (button === "تأكيد") {
       const TEST = await QRCode.toDataURL(from);
        await sendTextMessage(from);
-      await sendImageMessage(from, TEST);
-
+     // await sendImageMessage(from, TEST);
+  await sendImageMessage(
+        from,
+        "https://fra1.digitaloceanspaces.com/ekaterra-test/Vodafone-Summer-2025/smiles.png",
+      );
       return json({ success: true });
     }
     // if (button === "Get My Photo") {
