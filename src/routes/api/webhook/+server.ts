@@ -59,9 +59,11 @@ export const POST: RequestHandler = async ({ request }) => {
   }
 
   if (["button"].includes(message.type)) {
+
     const from = message.from; // wa_id (phone without +)
 
     const button = message.button?.payload;
+    console.log({button})
     if (button === "Tell me how it works") {
       await sendTextMessage(from)
       await sendImageMessage(
