@@ -76,7 +76,7 @@ export const POST: RequestHandler = async ({ request }) => {
       const TEST = await QRCode.toDataURL(from);
       await sendTextMessage(from);
       // await sendImageMessage(from, TEST);
-      await sendImageMessage(from, "https://i.ibb.co/wr8S0Ncq/image-0-1.png");
+      await sendImageMessageAlt(from,TEST);
       return json({ success: true });
     }
     // if (button === "Get My Photo") {

@@ -1,4 +1,5 @@
 import { json, type RequestHandler } from "@sveltejs/kit";
+import Users from "./clients_whatsapp.json"
 import {
   WEBHOOK_VERIFY_TOKEN,
   WHATSAPP_TOKEN,
@@ -16,6 +17,12 @@ export const OPTIONS: RequestHandler = async () => {
     status: 204,
     headers: corsHeaders,
   });
+};
+export const GET: RequestHandler = async ({ request }) => {
+   
+
+ 
+  return json({ ok: true });
 };
 
 export const POST: RequestHandler = async ({ request }) => {
