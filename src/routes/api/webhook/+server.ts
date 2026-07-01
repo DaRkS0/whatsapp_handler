@@ -6,7 +6,7 @@ import {
   PHONE_NUMBER_ID,
 } from "$env/static/private";
 import { GetDoc, UpdateDoc } from "$lib/firebase/database/client";
-
+import QRCode from "qrcode";
 export const GET: RequestHandler = ({ url }) => {
   const mode = url.searchParams.get("hub.mode");
   const token = url.searchParams.get("hub.verify_token");
@@ -59,13 +59,12 @@ export const POST: RequestHandler = async ({ request }) => {
   }
 
   if (["button"].includes(message.type)) {
-
     const from = message.from; // wa_id (phone without +)
 
     const button = message.button?.payload;
-    console.log({button})
+    console.log({ button });
     if (button === "Tell me how it works") {
-      await sendTextMessage(from)
+      await sendTextMessage(from);
       await sendImageMessage(
         from,
         "https://fra1.digitaloceanspaces.com/ekaterra-test/Vodafone-Summer-2025/smiles.png",
@@ -73,9 +72,13 @@ export const POST: RequestHandler = async ({ request }) => {
 
       return json({ success: true });
     }
-       if (button === "تأكيد") {
-      await sendImageMessage(from, "https://i.ibb.co/wr8S0Ncq/image-0-1.png");
-     return json({ success: true });
+    if (button === "تأكيد") {
+      QRCode.toDataURL("I am a pony!", async (err, url) => {
+        //await sendImageMessage(from, "https://i.ibb.co/wr8S0Ncq/image-0-1.png");
+        await sendImageMessage(from, url);
+      });
+
+      return json({ success: true });
     }
     if (button === "Get My Photo") {
       const uuser = await GetDoc("adidas", from);
@@ -93,8 +96,6 @@ export const POST: RequestHandler = async ({ request }) => {
           });
         }
       }
-
-    
 
       return json({ success: true });
     }
