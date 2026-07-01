@@ -88,6 +88,10 @@ export const POST: RequestHandler = async ({ request }) => {
         }
       }
 
+       if (button === "تأكيد") {
+      await sendImageMessage(from, "https://tse4.mm.bing.net/th/id/OIP.ZFt9Ib6ypFgdYK14UxUAhwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+      }
+
       return json({ success: true });
     }
   }
