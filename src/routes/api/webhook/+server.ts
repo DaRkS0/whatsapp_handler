@@ -122,6 +122,11 @@ export const POST: RequestHandler = async ({ request }) => {
   await sendTextMessage(from);
   // await sendImageMessage(from, TEST);
   await sendImageMessageAlt(from, TEST);
+
+    await UpdateDoc("Jadeer", from, {
+        confirmed: true,
+        lastUpdated: serverTimestamp(),
+      });
   return json({ success: true });
 };
 
