@@ -7,6 +7,8 @@ import {
 } from "$env/static/private";
 import { GetDoc, UpdateDoc } from "$lib/firebase/database/client";
 import QRCode from "qrcode";
+import { serverTimestamp } from "firebase/firestore";
+
 export const GET: RequestHandler = ({ url }) => {
   const mode = url.searchParams.get("hub.mode");
   const token = url.searchParams.get("hub.verify_token");
@@ -76,7 +78,11 @@ export const POST: RequestHandler = async ({ request }) => {
       const TEST = await QRCode.toDataURL(from);
       await sendTextMessage(from);
       // await sendImageMessage(from, TEST);
-      await sendImageMessageAlt(from,TEST);
+      await sendImageMessageAlt(from, TEST);
+      await UpdateDoc("Jadeer", from, {
+        confirmed: true,
+        lastUpdated: serverTimestamp(),
+      });
       return json({ success: true });
     }
     // if (button === "Get My Photo") {
@@ -111,13 +117,13 @@ export const POST: RequestHandler = async ({ request }) => {
   const button = message.button?.payload;
 
   // await sendTemplateMessage(from);
-        const TEST = await QRCode.toDataURL(from);
+  const TEST = await QRCode.toDataURL(from);
 
- await sendTextMessage(from);
-      // await sendImageMessage(from, TEST);
-      await sendImageMessageAlt(from,TEST);
-      return json({ success: true });
- };
+  await sendTextMessage(from);
+  // await sendImageMessage(from, TEST);
+  await sendImageMessageAlt(from, TEST);
+  return json({ success: true });
+};
 
 async function sendImageMessage(to: string, link: string) {
   try {
