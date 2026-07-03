@@ -31,11 +31,13 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
 
   const userssss = await GetDocs("Jadeer");
   const users = userssss.docs.map((u) => {
-    const { name, confirmedAt } = u.data();
+    const { name, confirmedAt, deliveredAt, readAt,lastUpdated } = u.data();
     //  console.log({confirmedAt})
     return {
       name, phone: u.id, confirmedAt: confirmedAt ? confirmedAt.toDate().toLocaleString
-        () : ""
+        () :  lastUpdated ? lastUpdated.toDate().toLocaleString() : "",
+      deliveredAt: deliveredAt ? deliveredAt.toDate().toLocaleString() : "",
+      readAt: readAt ? readAt.toDate().toLocaleString() : ""
     };
   });
   return {
