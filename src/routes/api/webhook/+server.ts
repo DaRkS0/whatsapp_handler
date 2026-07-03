@@ -63,7 +63,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 
 
-
+console.log("Statuses:", JSON.stringify(statuses, null, 2));
 
   for (const status of statuses) {
     const recipientId = status.recipient_id;        // phone number
@@ -73,21 +73,21 @@ export const POST: RequestHandler = async ({ request }) => {
     const isTemplateOriginated = ['marketing', 'utility', 'authentication']
       .includes(status.pricing?.category); // outgoing status
 
-    if (statusType === "delivered" && isTemplateOriginated) {
+    if (statusType === "read" && isTemplateOriginated) {
+      // Handle the delivered status for template-originated messages
+      // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
+      // e.g. update your Firestore doc for this recipient/message
+      await UpdateDoc("Jadeer", recipientId, {
+       readAt: serverTimestamp(),
+      });
+    }
+
+     if (statusType === "delivered" && isTemplateOriginated) {
       // Handle the delivered status for template-originated messages
       // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
       // e.g. update your Firestore doc for this recipient/message
       await UpdateDoc("Jadeer", recipientId, {
         deliveredAt: serverTimestamp(),
-      });
-    }
-
-     if (statusType === "sent" && isTemplateOriginated) {
-      // Handle the delivered status for template-originated messages
-      // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
-      // e.g. update your Firestore doc for this recipient/message
-      await UpdateDoc("Jadeer", recipientId, {
-        sentAt: serverTimestamp(),
       });
     }
     // e.g. update your Firestore doc for this recipient/message
