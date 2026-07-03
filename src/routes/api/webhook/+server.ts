@@ -120,18 +120,18 @@ export const POST: RequestHandler = async ({ request }) => {
   const text = message.text?.body?.toLowerCase();
   const button = message.button?.payload;
 
-  // await sendTemplateMessage(from);
-  const TEST = await QRCode.toDataURL(from);
+  // // await sendTemplateMessage(from);
+  // const TEST = await QRCode.toDataURL(from);
 
-  await sendTextMessage(from);
-  // await sendImageMessage(from, TEST);
-  await sendImageMessageAlt(from, TEST);
+  // await sendTextMessage(from);
+  // // await sendImageMessage(from, TEST);
+  // await sendImageMessageAlt(from, TEST);
 
-  await UpdateDoc("Jadeer", from, {
-    confirmed: true,
-    lastUpdated: serverTimestamp()
+  // await UpdateDoc("Jadeer", from, {
+  //   confirmed: true,
+  //   lastUpdated: serverTimestamp()
 
-  });
+  // });
   return json({ success: true });
 };
 
