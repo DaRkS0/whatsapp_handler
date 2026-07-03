@@ -80,6 +80,13 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
       });
     }
 
+     if (statusType === "sent" && isTemplateOriginated) {
+ 
+      await UpdateDoc("Jadeer", recipientId, {
+       sentAt: serverTimestamp(),
+      });
+    }
+
      if (statusType === "delivered" && isTemplateOriginated) {
       
       await UpdateDoc("Jadeer", recipientId, {
