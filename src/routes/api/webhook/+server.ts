@@ -61,6 +61,40 @@ export const POST: RequestHandler = async ({ request }) => {
   if (!message) {
     return json({ ok: true });
   }
+  const statuses = value.statuses || [];
+
+
+
+
+
+  for (const status of statuses) {
+    const recipientId = status.recipient_id;        // phone number
+    const messageId = status.id;                    // wamid, links back to the original template send
+    const statusType = status.status;                // "sent" | "delivered" | "read" | "failed"
+    //const statusTimeUTC = new Date(Number(status.timestamp) * 1000).toISOString();
+    const isTemplateOriginated = ['marketing', 'utility', 'authentication']
+      .includes(status.pricing?.category); // outgoing status
+
+    if (statusType === "delivered" && isTemplateOriginated) {
+      // Handle the delivered status for template-originated messages
+      // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
+      // e.g. update your Firestore doc for this recipient/message
+      await UpdateDoc("Jadeer", recipientId, {
+        deliveredAt: serverTimestamp(),
+      });
+    }
+
+     if (statusType === "sent" && isTemplateOriginated) {
+      // Handle the delivered status for template-originated messages
+      // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
+      // e.g. update your Firestore doc for this recipient/message
+      await UpdateDoc("Jadeer", recipientId, {
+        sentAt: serverTimestamp(),
+      });
+    }
+    // e.g. update your Firestore doc for this recipient/message
+  }
+
 
   if (["button"].includes(message.type)) {
     const from = message.from; // wa_id (phone without +)
