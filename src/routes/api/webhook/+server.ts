@@ -51,9 +51,9 @@ export const POST: RequestHandler = async ({ request }) => {
   const value = change?.value;
 
   // Ignore delivery/read statuses
-  if (value?.statuses) {
-    return json({ ok: true });
-  }
+  // if (value?.statuses) {
+  //   return json({ ok: true });
+  // }
 
   const message = value?.messages?.[0];
   const contacts = value?.contacts || [];
@@ -74,23 +74,22 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
       .includes(status.pricing?.category); // outgoing status
 
     if (statusType === "read" && isTemplateOriginated) {
-      // Handle the delivered status for template-originated messages
-      // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
-      // e.g. update your Firestore doc for this recipient/message
+ 
       await UpdateDoc("Jadeer", recipientId, {
        readAt: serverTimestamp(),
       });
     }
 
      if (statusType === "delivered" && isTemplateOriginated) {
-      // Handle the delivered status for template-originated messages
-      // console.log(`Template message with ID ${messageId} was delivered to ${recipientId} at ${statusTimeUTC}.`);
-      // e.g. update your Firestore doc for this recipient/message
+      
       await UpdateDoc("Jadeer", recipientId, {
         deliveredAt: serverTimestamp(),
       });
     }
-    // e.g. update your Firestore doc for this recipient/message
+   }
+
+     if (value?.statuses) {
+    return json({ ok: true });
   }
 
   if (!message) {
@@ -102,15 +101,7 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
     const name = contact?.profile?.name || "";
     const button = message.button?.payload;
     console.log({ button });
-    // if (button === "Tell me how it works") {
-    //   await sendTextMessage(from);
-    //   await sendImageMessage(
-    //     from,
-    //     "https://fra1.digitaloceanspaces.com/ekaterra-test/Vodafone-Summer-2025/smiles.png",
-    //   );
-
-    //   return json({ success: true });
-    // }
+     
     if (button === "تأكيد") {
       const TEST = await QRCode.toDataURL(from);
       await sendTextMessage(from);
@@ -124,25 +115,7 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
       });
       return json({ success: true });
     }
-    // if (button === "Get My Photo") {
-    //   const uuser = await GetDoc("adidas", from);
-
-    //   if (uuser.exists()) {
-    //     const mg = uuser.get("img_status");
-    //     const url = uuser.get("url");
-
-    //     if (mg === "complete") {
-    //       await sendImageMessage(from, url);
-    //     } else {
-    //       await UpdateDoc("adidas", from, {
-    //         user_status: "waiting",
-    //         img_status: "pending",
-    //       });
-    //     }
-    //   }
-
-    //   return json({ success: true });
-    // }
+     
   }
 
   // Only respond to user messages (text, image, etc.)
