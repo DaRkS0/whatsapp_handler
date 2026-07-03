@@ -58,9 +58,7 @@ export const POST: RequestHandler = async ({ request }) => {
   const message = value?.messages?.[0];
   const contacts = value?.contacts || [];
 
-  if (!message) {
-    return json({ ok: true });
-  }
+
   const statuses = value.statuses || [];
 
 
@@ -95,7 +93,9 @@ export const POST: RequestHandler = async ({ request }) => {
     // e.g. update your Firestore doc for this recipient/message
   }
 
-
+  if (!message) {
+    return json({ ok: true });
+  }
   if (["button"].includes(message.type)) {
     const from = message.from; // wa_id (phone without +)
     const contact = contacts.find((c) => c.wa_id === from) || contacts[0];
