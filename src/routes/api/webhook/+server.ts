@@ -56,14 +56,16 @@ export const POST: RequestHandler = async ({ request }) => {
   }
 
   const message = value?.messages?.[0];
+  const contacts = value?.contacts || [];
+
   if (!message) {
     return json({ ok: true });
   }
 
   if (["button"].includes(message.type)) {
     const from = message.from; // wa_id (phone without +)
-    const name = message.name || ""; // wa_id (phone without +)
-
+    const contact = contacts.find((c) => c.wa_id === from) || contacts[0];
+    const name = contact?.profile?.name || "";
     const button = message.button?.payload;
     console.log({ button });
     // if (button === "Tell me how it works") {
@@ -115,7 +117,6 @@ export const POST: RequestHandler = async ({ request }) => {
   }
 
   const from = message.from; // wa_id (phone without +)
-  const name = message.name || ""; // wa_id (phone without +)
 
   const text = message.text?.body?.toLowerCase();
   const button = message.button?.payload;
@@ -129,8 +130,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
   await UpdateDoc("Jadeer", from, {
     confirmed: true,
-    lastUpdated: serverTimestamp(),
-    name
+    lastUpdated: serverTimestamp()
+
   });
   return json({ success: true });
 };
