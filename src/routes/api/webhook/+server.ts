@@ -63,8 +63,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 
 
-console.log("Statuses:", JSON.stringify(statuses, null, 2));
-
+ 
   for (const status of statuses) {
     const recipientId = status.recipient_id;        // phone number
     const messageId = status.id;                    // wamid, links back to the original template send
@@ -73,29 +72,15 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
     const isTemplateOriginated = ['marketing', 'utility', 'authentication']
       .includes(status.pricing?.category); // outgoing status
 
-    if (statusType === "read" && isTemplateOriginated) {
- 
+    if (isTemplateOriginated) {
+
       await UpdateDoc("Jadeer", recipientId, {
-       readAt: serverTimestamp(),
+        [`${statusType}At`]: serverTimestamp(),
       });
     }
+  }
 
-     if (statusType === "sent" && isTemplateOriginated) {
- 
-      await UpdateDoc("Jadeer", recipientId, {
-       sentAt: serverTimestamp(),
-      });
-    }
-
-     if (statusType === "delivered" && isTemplateOriginated) {
-      
-      await UpdateDoc("Jadeer", recipientId, {
-        deliveredAt: serverTimestamp(),
-      });
-    }
-   }
-
-     if (value?.statuses) {
+  if (value?.statuses) {
     return json({ ok: true });
   }
 
@@ -108,7 +93,7 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
     const name = contact?.profile?.name || "";
     const button = message.button?.payload;
     console.log({ button });
-     
+
     if (button === "تأكيد") {
       const TEST = await QRCode.toDataURL(from);
       await sendTextMessage(from);
@@ -122,7 +107,7 @@ console.log("Statuses:", JSON.stringify(statuses, null, 2));
       });
       return json({ success: true });
     }
-     
+
   }
 
   // Only respond to user messages (text, image, etc.)
