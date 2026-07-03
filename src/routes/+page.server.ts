@@ -29,13 +29,29 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
   // }
 
 
+  //   let notex: string[] = []
+  // for (const status of Statues) {
+  //   const ms = await GetDoc("Jadeer", status.recipientId)
+  //   if (!ms.exists() || notex.includes(status.recipientId)) {
+
+  //     if (!notex.includes(status.recipientId))
+  //       notex.push(status.recipientId)
+
+  //     await UpdateDoc("Jadeer", status.recipientId, {
+  //       [`${status.status}At`]: Timestamp.fromDate(new Date(status.statusTimestampUTC))
+  //     });
+
+  //     console.log(`Updated ${status.status}At for ${status.recipientId}`);
+  //   }
+  // }
+
   const userssss = await GetDocs("Jadeer");
   const users = userssss.docs.map((u) => {
-    const { name, confirmedAt, deliveredAt, readAt,lastUpdated } = u.data();
+    const { name, confirmedAt, deliveredAt, readAt, lastUpdated } = u.data();
     //  console.log({confirmedAt})
     return {
       name, phone: u.id, confirmedAt: confirmedAt ? confirmedAt.toDate().toLocaleString
-        () :  lastUpdated ? lastUpdated.toDate().toLocaleString() : "",
+        () : lastUpdated ? lastUpdated.toDate().toLocaleString() : "",
       deliveredAt: deliveredAt ? deliveredAt.toDate().toLocaleString() : "",
       readAt: readAt ? readAt.toDate().toLocaleString() : ""
     };
