@@ -1,0 +1,1550 @@
+[
+  {
+    "kind": "status",
+    "status": "failed",
+    "recipientId": "15513585208",
+    "messageId": "wamid.HBgLMTU1MTM1ODUyMDgVAgARGBI4MTFBQTFGMzUxNTk2RTQ0ODMA",
+    "statusTimestampUTC": "2026-07-03T08:48:31.000Z",
+    "logTimeUTC": "2026-07-03 08:48:32",
+    "requestId": "m82ww-1783068512185-d9c896a0d89e"
+  },
+  {
+    "kind": "status",
+    "status": "failed",
+    "recipientId": "16178494277",
+    "messageId": "wamid.HBgLMTYxNzg0OTQyNzcVAgARGBIzMEM3MDBERkIyNEUyQTQ3NUMA",
+    "statusTimestampUTC": "2026-07-03T08:48:40.000Z",
+    "logTimeUTC": "2026-07-03 08:48:41",
+    "requestId": "dskrw-1783068521331-efe2b9031074"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201000002067",
+    "messageId": "wamid.HBgMMjAxMDAwMDAyMDY3FQIAERgSNkU4Q0Y4MDY0MjlEOEI1NzI0AA==",
+    "statusTimestampUTC": "2026-07-02T17:58:11.000Z",
+    "logTimeUTC": "2026-07-02 17:58:11",
+    "requestId": "rbgtd-1783015091884-b816e8bfb42f"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201000002067",
+    "messageId": "wamid.HBgMMjAxMDAwMDAyMDY3FQIAERgSNkU4Q0Y4MDY0MjlEOEI1NzI0AA==",
+    "statusTimestampUTC": "2026-07-02T17:58:10.000Z",
+    "logTimeUTC": "2026-07-02 17:58:11",
+    "requestId": "77hsd-1783015091011-03269cb2aea4"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201000026294",
+    "messageId": "wamid.HBgMMjAxMDAwMDI2Mjk0FQIAERgSMEVEOTdBMjIyREREMzQyMjI2AA==",
+    "statusTimestampUTC": "2026-07-02T12:33:15.000Z",
+    "logTimeUTC": "2026-07-02 12:33:16",
+    "requestId": "bptln-1782995595537-006155e4d370"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201003058222",
+    "messageId": "wamid.HBgMMjAxMDAzMDU4MjIyFQIAERgSOUE5Q0JEN0E4M0IzOEFENUYwAA==",
+    "statusTimestampUTC": "2026-07-02T03:52:59.000Z",
+    "logTimeUTC": "2026-07-02 03:53:02",
+    "requestId": "7cw7x-1782964381657-457ce7036a6d"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201005090421",
+    "messageId": "wamid.HBgMMjAxMDA1MDkwNDIxFQIAERgSNzJEMUYzMzJBQ0Y2QTc2NjE3AA==",
+    "statusTimestampUTC": "2026-07-02T07:34:32.000Z",
+    "logTimeUTC": "2026-07-02 07:34:33",
+    "requestId": "6p6dr-1782977673012-e16ea80cedc9"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201008818999",
+    "messageId": "wamid.HBgMMjAxMDA4ODE4OTk5FQIAERgSMUI2RUZGM0NFQkQ2N0JBRjg0AA==",
+    "statusTimestampUTC": "2026-07-02T08:35:38.000Z",
+    "logTimeUTC": "2026-07-02 08:35:38",
+    "requestId": "4lbf5-1782981338754-945e0801508b"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201008818999",
+    "messageId": "wamid.HBgMMjAxMDA4ODE4OTk5FQIAERgSMUI2RUZGM0NFQkQ2N0JBRjg0AA==",
+    "statusTimestampUTC": "2026-07-02T08:35:38.000Z",
+    "logTimeUTC": "2026-07-02 08:35:38",
+    "requestId": "5b299-1782981338765-a4f80b658316"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201008818999",
+    "messageId": "wamid.HBgMMjAxMDA4ODE4OTk5FQIAERgSMUI2RUZGM0NFQkQ2N0JBRjg0AA==",
+    "statusTimestampUTC": "2026-07-02T08:35:37.000Z",
+    "logTimeUTC": "2026-07-02 08:35:38",
+    "requestId": "k26ng-1782981338096-65e334633c90"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201012185666",
+    "messageId": "wamid.HBgMMjAxMDEyMTg1NjY2FQIAERgSNUIyMEJDRUQ1MzQxMjBCNEVGAA==",
+    "statusTimestampUTC": "2026-07-02T23:29:52.000Z",
+    "logTimeUTC": "2026-07-02 23:29:52",
+    "requestId": "x7nfn-1783034992845-c0cd4fd290b7"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201012185666",
+    "messageId": "wamid.HBgMMjAxMDEyMTg1NjY2FQIAERgSNUIyMEJDRUQ1MzQxMjBCNEVGAA==",
+    "statusTimestampUTC": "2026-07-02T23:29:52.000Z",
+    "logTimeUTC": "2026-07-02 23:29:52",
+    "requestId": "fctv8-1783034992652-b7438069e12e"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201012185666",
+    "messageId": "wamid.HBgMMjAxMDEyMTg1NjY2FQIAERgSNUIyMEJDRUQ1MzQxMjBCNEVGAA==",
+    "statusTimestampUTC": "2026-07-02T23:29:51.000Z",
+    "logTimeUTC": "2026-07-02 23:29:52",
+    "requestId": "4fmr8-1783034992309-e7bc7815a602"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201023401541",
+    "messageId": "wamid.HBgMMjAxMDIzNDAxNTQxFQIAERgSOUQxREE5OTVBMENCQ0Q1MjhFAA==",
+    "statusTimestampUTC": "2026-07-02T04:45:21.000Z",
+    "logTimeUTC": "2026-07-02 04:45:21",
+    "requestId": "8l96x-1782967521434-19c1faa6e1b2"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201023401541",
+    "messageId": "wamid.HBgMMjAxMDIzNDAxNTQxFQIAERgSOUQxREE5OTVBMENCQ0Q1MjhFAA==",
+    "statusTimestampUTC": "2026-07-02T04:45:20.000Z",
+    "logTimeUTC": "2026-07-02 04:45:21",
+    "requestId": "5ldws-1782967521098-bbbdeddcf660"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201025250298",
+    "messageId": "wamid.HBgMMjAxMDI1MjUwMjk4FQIAERgSQjhERkRDMDA5MTZGRDYzNThDAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:36.000Z",
+    "logTimeUTC": "2026-07-03 08:48:37",
+    "requestId": "pr9sr-1783068517272-42881b6a4139"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201025250298",
+    "messageId": "wamid.HBgMMjAxMDI1MjUwMjk4FQIAERgSQjhERkRDMDA5MTZGRDYzNThDAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:35.000Z",
+    "logTimeUTC": "2026-07-03 08:48:36",
+    "requestId": "f999q-1783068516758-a39f433fa416"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201026039374",
+    "messageId": "wamid.HBgMMjAxMDI2MDM5Mzc0FQIAERgSQTUxOEMxRDA4ODg1RTM3NTVBAA==",
+    "statusTimestampUTC": "2026-07-02T00:31:46.000Z",
+    "logTimeUTC": "2026-07-02 00:31:47",
+    "requestId": "wzxj6-1782952306827-23b455b8461e"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201032020023",
+    "messageId": "wamid.HBgMMjAxMDMyMDIwMDIzFQIAERgSNTIxRDQzNDJDMDg4QTJGNTY5AA==",
+    "statusTimestampUTC": "2026-07-02T21:12:01.000Z",
+    "logTimeUTC": "2026-07-02 21:12:02",
+    "requestId": "ltfkk-1783026721981-e67da4e567c0"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201032020023",
+    "messageId": "wamid.HBgMMjAxMDMyMDIwMDIzFQIAERgSNTIxRDQzNDJDMDg4QTJGNTY5AA==",
+    "statusTimestampUTC": "2026-07-02T21:12:01.000Z",
+    "logTimeUTC": "2026-07-02 21:12:02",
+    "requestId": "d5pvw-1783026722011-eeb9866522d2"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201032020023",
+    "messageId": "wamid.HBgMMjAxMDMyMDIwMDIzFQIAERgSNTIxRDQzNDJDMDg4QTJGNTY5AA==",
+    "statusTimestampUTC": "2026-07-02T21:12:00.000Z",
+    "logTimeUTC": "2026-07-02 21:12:01",
+    "requestId": "t99xc-1783026721265-3e9d7657fa55"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201034952999",
+    "messageId": "wamid.HBgMMjAxMDM0OTUyOTk5FQIAERgSODk4NTE3NDA1MkMzODdBM0Y0AA==",
+    "statusTimestampUTC": "2026-07-02T00:02:58.000Z",
+    "logTimeUTC": "2026-07-02 00:02:59",
+    "requestId": "dxlmg-1782950579109-50f5baa609dd"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201034952999",
+    "messageId": "wamid.HBgMMjAxMDM0OTUyOTk5FQIAERgSODk4NTE3NDA1MkMzODdBM0Y0AA==",
+    "statusTimestampUTC": "2026-07-02T00:03:05.000Z",
+    "logTimeUTC": "2026-07-02 00:03:06",
+    "requestId": "9hzzg-1782950586122-026f172128b9"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201034952999",
+    "messageId": "wamid.HBgMMjAxMDM0OTUyOTk5FQIAERgSODk4NTE3NDA1MkMzODdBM0Y0AA==",
+    "statusTimestampUTC": "2026-07-02T00:02:58.000Z",
+    "logTimeUTC": "2026-07-02 00:02:58",
+    "requestId": "mzgpl-1782950578823-c83c85a065da"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201060671583",
+    "messageId": "wamid.HBgMMjAxMDYwNjcxNTgzFQIAERgSN0Q2MUY2MDhFNTAyQTJGNDAxAA==",
+    "statusTimestampUTC": "2026-07-02T02:13:06.000Z",
+    "logTimeUTC": "2026-07-02 02:13:07",
+    "requestId": "ptn2l-1782958387169-3fd8af4786c6"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201060671583",
+    "messageId": "wamid.HBgMMjAxMDYwNjcxNTgzFQIAERgSN0Q2MUY2MDhFNTAyQTJGNDAxAA==",
+    "statusTimestampUTC": "2026-07-02T02:15:44.000Z",
+    "logTimeUTC": "2026-07-02 02:15:44",
+    "requestId": "8j88x-1782958544662-1ac2c9b723e3"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201064608518",
+    "messageId": "wamid.HBgMMjAxMDY0NjA4NTE4FQIAERgSRkY4MEFGMUI2RDEwQjFFNzJFAA==",
+    "statusTimestampUTC": "2026-07-02T15:08:14.000Z",
+    "logTimeUTC": "2026-07-02 15:08:14",
+    "requestId": "hwtdd-1783004894525-a5e560a375a1"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201064608518",
+    "messageId": "wamid.HBgMMjAxMDY0NjA4NTE4FQIAERgSRkY4MEFGMUI2RDEwQjFFNzJFAA==",
+    "statusTimestampUTC": "2026-07-02T15:08:13.000Z",
+    "logTimeUTC": "2026-07-02 15:08:14",
+    "requestId": "tsk4h-1783004894210-97dcea052a50"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201064670323",
+    "messageId": "wamid.HBgMMjAxMDY0NjcwMzIzFQIAERgSNTI1MzBCREY3RDg0NUYzOENDAA==",
+    "statusTimestampUTC": "2026-07-03T10:29:23.000Z",
+    "logTimeUTC": "2026-07-03 10:29:24",
+    "requestId": "w8xr7-1783074564274-075c70ddf646"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201064670323",
+    "messageId": "wamid.HBgMMjAxMDY0NjcwMzIzFQIAERgSNTI1MzBCREY3RDg0NUYzOENDAA==",
+    "statusTimestampUTC": "2026-07-03T10:29:23.000Z",
+    "logTimeUTC": "2026-07-03 10:29:24",
+    "requestId": "k9x58-1783074564088-42fdf932116d"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201068884440",
+    "messageId": "wamid.HBgMMjAxMDY4ODg0NDQwFQIAERgSNEZCQjEzMzQzNzY5Qjk5OEFDAA==",
+    "statusTimestampUTC": "2026-07-02T14:39:13.000Z",
+    "logTimeUTC": "2026-07-02 14:39:13",
+    "requestId": "2jbfn-1783003153822-67a696a5dce3"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201068884440",
+    "messageId": "wamid.HBgMMjAxMDY4ODg0NDQwFQIAERgSNEZCQjEzMzQzNzY5Qjk5OEFDAA==",
+    "statusTimestampUTC": "2026-07-02T14:39:13.000Z",
+    "logTimeUTC": "2026-07-02 14:39:13",
+    "requestId": "8fwlp-1783003153676-0d04fea4c528"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201070137135",
+    "messageId": "wamid.HBgMMjAxMDcwMTM3MTM1FQIAERgSQzcyMUUyQUQ1NTYxOTlBNDAwAA==",
+    "statusTimestampUTC": "2026-07-02T11:51:28.000Z",
+    "logTimeUTC": "2026-07-02 11:51:30",
+    "requestId": "jfpbp-1782993089148-fd0c5bc9017f"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201112135141",
+    "messageId": "wamid.HBgMMjAxMTEyMTM1MTQxFQIAERgSMUEyM0JGRjkyRjJGRTdCNTU5AA==",
+    "statusTimestampUTC": "2026-07-02T07:00:35.000Z",
+    "logTimeUTC": "2026-07-02 07:00:36",
+    "requestId": "qbvvg-1782975636083-a5d98d177263"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201112135141",
+    "messageId": "wamid.HBgMMjAxMTEyMTM1MTQxFQIAERgSMkNCQTcyRjg3Q0ZBRTRBN0RGAA==",
+    "statusTimestampUTC": "2026-07-02T08:18:29.000Z",
+    "logTimeUTC": "2026-07-02 08:18:30",
+    "requestId": "zp8hg-1782980310215-36148c6d677f"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201112135141",
+    "messageId": "wamid.HBgMMjAxMTEyMTM1MTQxFQIAERgSMkNCQTcyRjg3Q0ZBRTRBN0RGAA==",
+    "statusTimestampUTC": "2026-07-02T08:18:29.000Z",
+    "logTimeUTC": "2026-07-02 08:18:30",
+    "requestId": "z2wzm-1782980309969-55a319530f3f"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201120830050",
+    "messageId": "wamid.HBgMMjAxMTIwODMwMDUwFQIAERgSMTUwRTM2MUM2QjFDN0IzNTYyAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:27.000Z",
+    "logTimeUTC": "2026-07-03 08:48:27",
+    "requestId": "7jn78-1783068507772-2983d7008649"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201120830050",
+    "messageId": "wamid.HBgMMjAxMTIwODMwMDUwFQIAERgSQjcxNTA2NDg5OTY0ODRGNTI1AA==",
+    "statusTimestampUTC": "2026-07-03T08:52:17.000Z",
+    "logTimeUTC": "2026-07-03 08:52:17",
+    "requestId": "82hww-1783068737883-f7db354da601"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201120830050",
+    "messageId": "wamid.HBgMMjAxMTIwODMwMDUwFQIAERgSQjcxNTA2NDg5OTY0ODRGNTI1AA==",
+    "statusTimestampUTC": "2026-07-03T08:52:17.000Z",
+    "logTimeUTC": "2026-07-03 08:52:17",
+    "requestId": "p4hcn-1783068737433-103d3f95bf13"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201125753807",
+    "messageId": "wamid.HBgMMjAxMTI1NzUzODA3FQIAERgSQ0IzRUY1RkY0MzE5QzI0RDY2AA==",
+    "statusTimestampUTC": "2026-07-02T01:06:10.000Z",
+    "logTimeUTC": "2026-07-02 01:06:12",
+    "requestId": "mwqnt-1782954371113-1bb219af3cb7"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201140794476",
+    "messageId": "wamid.HBgMMjAxMTQwNzk0NDc2FQIAERgSQUVBQzUwNTZBMTYzMDk5QTRDAA==",
+    "statusTimestampUTC": "2026-07-02T11:38:11.000Z",
+    "logTimeUTC": "2026-07-02 11:38:12",
+    "requestId": "xf6pc-1782992292619-d433b4f9a8ef"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201144930863",
+    "messageId": "wamid.HBgMMjAxMTQ0OTMwODYzFQIAERgSOUQ4RTZERjVFNUQ2NUM1OEFEAA==",
+    "statusTimestampUTC": "2026-07-02T08:19:41.000Z",
+    "logTimeUTC": "2026-07-02 08:19:42",
+    "requestId": "c5t74-1782980382319-9940b6a45dd6"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201144930863",
+    "messageId": "wamid.HBgMMjAxMTQ0OTMwODYzFQIAERgSOUQ4RTZERjVFNUQ2NUM1OEFEAA==",
+    "statusTimestampUTC": "2026-07-02T08:19:41.000Z",
+    "logTimeUTC": "2026-07-02 08:19:41",
+    "requestId": "gvtt7-1782980381764-a494fb39c64d"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201151818276",
+    "messageId": "wamid.HBgMMjAxMTUxODE4Mjc2FQIAERgSOENEQ0RGNjY3OUI4QUI1RDBCAA==",
+    "statusTimestampUTC": "2026-07-03T08:41:05.000Z",
+    "logTimeUTC": "2026-07-03 08:41:05",
+    "requestId": "cwh8t-1783068065856-e0476eacec6d"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201151818276",
+    "messageId": "wamid.HBgMMjAxMTUxODE4Mjc2FQIAERgSOENEQ0RGNjY3OUI4QUI1RDBCAA==",
+    "statusTimestampUTC": "2026-07-03T09:18:50.000Z",
+    "logTimeUTC": "2026-07-03 09:18:52",
+    "requestId": "lldt9-1783070331421-88260d6c0127"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201151818276",
+    "messageId": "wamid.HBgMMjAxMTUxODE4Mjc2FQIAERgSOENEQ0RGNjY3OUI4QUI1RDBCAA==",
+    "statusTimestampUTC": "2026-07-03T08:41:03.000Z",
+    "logTimeUTC": "2026-07-03 08:41:05",
+    "requestId": "6njrq-1783068064829-9388e728012f"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201155551137",
+    "messageId": "wamid.HBgMMjAxMTU1NTUxMTM3FQIAERgSMTg2QTRGRTk0QTlDMjM4NjUzAA==",
+    "statusTimestampUTC": "2026-07-03T09:19:11.000Z",
+    "logTimeUTC": "2026-07-03 09:19:12",
+    "requestId": "fzfmz-1783070352336-6bf235954b77"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201155551137",
+    "messageId": "wamid.HBgMMjAxMTU1NTUxMTM3FQIAERgSMTg2QTRGRTk0QTlDMjM4NjUzAA==",
+    "statusTimestampUTC": "2026-07-03T09:19:11.000Z",
+    "logTimeUTC": "2026-07-03 09:19:12",
+    "requestId": "bd2s5-1783070352205-cc037142496b"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201155580703",
+    "messageId": "wamid.HBgMMjAxMTU1NTgwNzAzFQIAERgSRTAxOTMyOTczOEYyOUE5RDY2AA==",
+    "statusTimestampUTC": "2026-07-02T18:50:12.000Z",
+    "logTimeUTC": "2026-07-02 18:50:16",
+    "requestId": "mv9z9-1783018214595-9ae6d73af0e6"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201155580703",
+    "messageId": "wamid.HBgMMjAxMTU1NTgwNzAzFQIAERgSMUQ4QzVBMTFEOUEyMkUxOTM2AA==",
+    "statusTimestampUTC": "2026-07-02T18:51:02.000Z",
+    "logTimeUTC": "2026-07-02 18:51:03",
+    "requestId": "fwddr-1783018263558-fea55646c8e8"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201155580703",
+    "messageId": "wamid.HBgMMjAxMTU1NTgwNzAzFQIAERgSMUQ4QzVBMTFEOUEyMkUxOTM2AA==",
+    "statusTimestampUTC": "2026-07-02T18:51:01.000Z",
+    "logTimeUTC": "2026-07-02 18:51:02",
+    "requestId": "xdhkv-1783018262119-c5975d3e67e0"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201212992186",
+    "messageId": "wamid.HBgMMjAxMjEyOTkyMTg2FQIAERgSNkI3ODgwRTM3QjE1QjkyNDYwAA==",
+    "statusTimestampUTC": "2026-07-02T04:08:18.000Z",
+    "logTimeUTC": "2026-07-02 04:08:21",
+    "requestId": "tlp49-1782965300313-550a44cb0621"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201212992186",
+    "messageId": "wamid.HBgMMjAxMjEyOTkyMTg2FQIAERgSNkI3ODgwRTM3QjE1QjkyNDYwAA==",
+    "statusTimestampUTC": "2026-07-02T04:31:06.000Z",
+    "logTimeUTC": "2026-07-02 04:31:08",
+    "requestId": "mj94t-1782966667200-e1b99828fdf7"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201223773317",
+    "messageId": "wamid.HBgMMjAxMjIzNzczMzE3FQIAERgSQkEzNzFGNDVDRUQxOUVDQzE1AA==",
+    "statusTimestampUTC": "2026-07-03T11:05:10.000Z",
+    "logTimeUTC": "2026-07-03 11:05:11",
+    "requestId": "9px4d-1783076711399-df46d1dc07fa"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201223773317",
+    "messageId": "wamid.HBgMMjAxMjIzNzczMzE3FQIAERgSQkEzNzFGNDVDRUQxOUVDQzE1AA==",
+    "statusTimestampUTC": "2026-07-03T11:05:10.000Z",
+    "logTimeUTC": "2026-07-03 11:05:11",
+    "requestId": "z5xr4-1783076711155-a6989e4a5d46"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201228948943",
+    "messageId": "wamid.HBgMMjAxMjI4OTQ4OTQzFQIAERgSN0IwREQ0NDRBMTUyNjI5RTc2AA==",
+    "statusTimestampUTC": "2026-07-02T14:34:56.000Z",
+    "logTimeUTC": "2026-07-02 14:34:57",
+    "requestId": "bhczg-1783002897159-f16ecca455f9"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201228948943",
+    "messageId": "wamid.HBgMMjAxMjI4OTQ4OTQzFQIAERgSN0IwREQ0NDRBMTUyNjI5RTc2AA==",
+    "statusTimestampUTC": "2026-07-02T14:34:56.000Z",
+    "logTimeUTC": "2026-07-02 14:34:57",
+    "requestId": "n4tx8-1783002897074-4c5f28f064da"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201228948943",
+    "messageId": "wamid.HBgMMjAxMjI4OTQ4OTQzFQIAERgSN0IwREQ0NDRBMTUyNjI5RTc2AA==",
+    "statusTimestampUTC": "2026-07-02T14:34:56.000Z",
+    "logTimeUTC": "2026-07-02 14:34:56",
+    "requestId": "nmzms-1783002896809-d9c86a394c80"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201277639914",
+    "messageId": "wamid.HBgMMjAxMjc3NjM5OTE0FQIAERgSN0QwNTU3M0I0MEI0MURFNTk2AA==",
+    "statusTimestampUTC": "2026-07-02T14:35:36.000Z",
+    "logTimeUTC": "2026-07-02 14:35:36",
+    "requestId": "s24qm-1783002936752-0df6772a2284"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201277639914",
+    "messageId": "wamid.HBgMMjAxMjc3NjM5OTE0FQIAERgSN0QwNTU3M0I0MEI0MURFNTk2AA==",
+    "statusTimestampUTC": "2026-07-02T14:35:35.000Z",
+    "logTimeUTC": "2026-07-02 14:35:36",
+    "requestId": "t87jn-1783002936414-5a929d8c2fb2"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201280000302",
+    "messageId": "wamid.HBgMMjAxMjgwMDAwMzAyFQIAERgSNDRGOTNCMENCNUEwREJCOTdEAA==",
+    "statusTimestampUTC": "2026-07-02T01:48:20.000Z",
+    "logTimeUTC": "2026-07-02 01:48:21",
+    "requestId": "zhcnd-1782956901103-d5cef4f7ed72"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201280000302",
+    "messageId": "wamid.HBgMMjAxMjgwMDAwMzAyFQIAERgSNDRGOTNCMENCNUEwREJCOTdEAA==",
+    "statusTimestampUTC": "2026-07-02T01:48:20.000Z",
+    "logTimeUTC": "2026-07-02 01:48:20",
+    "requestId": "4gxm9-1782956900710-fc29c5132780"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201280735879",
+    "messageId": "wamid.HBgMMjAxMjgwNzM1ODc5FQIAERgSNEYxNEY4OUZGMzQ0MjAxNTg3AA==",
+    "statusTimestampUTC": "2026-07-02T09:21:25.000Z",
+    "logTimeUTC": "2026-07-02 09:21:25",
+    "requestId": "sk2sm-1782984085871-ac76af9314dd"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201280735879",
+    "messageId": "wamid.HBgMMjAxMjgwNzM1ODc5FQIAERgSNEYxNEY4OUZGMzQ0MjAxNTg3AA==",
+    "statusTimestampUTC": "2026-07-02T09:21:25.000Z",
+    "logTimeUTC": "2026-07-02 09:21:25",
+    "requestId": "gx7gb-1782984085966-e068ae16a21f"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201280735879",
+    "messageId": "wamid.HBgMMjAxMjgwNzM1ODc5FQIAERgSNEYxNEY4OUZGMzQ0MjAxNTg3AA==",
+    "statusTimestampUTC": "2026-07-02T09:21:24.000Z",
+    "logTimeUTC": "2026-07-02 09:21:25",
+    "requestId": "45h7t-1782984085319-770d6126b36d"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201281278204",
+    "messageId": "wamid.HBgMMjAxMjgxMjc4MjA0FQIAERgSRTI3MkZDRDIzOEVFQ0E5NDMyAA==",
+    "statusTimestampUTC": "2026-07-02T08:36:48.000Z",
+    "logTimeUTC": "2026-07-02 08:36:48",
+    "requestId": "bwdgf-1782981408685-ed2230a4bc93"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201281278204",
+    "messageId": "wamid.HBgMMjAxMjgxMjc4MjA0FQIAERgSRTI3MkZDRDIzOEVFQ0E5NDMyAA==",
+    "statusTimestampUTC": "2026-07-02T08:36:48.000Z",
+    "logTimeUTC": "2026-07-02 08:36:48",
+    "requestId": "gg2gk-1782981408545-c12ef2321712"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201287762940",
+    "messageId": "wamid.HBgMMjAxMjg3NzYyOTQwFQIAERgSNjYzODA4OTFGQ0JBRkQ2REE5AA==",
+    "statusTimestampUTC": "2026-07-03T08:48:36.000Z",
+    "logTimeUTC": "2026-07-03 08:48:36",
+    "requestId": "t2x9m-1783068516853-a4ff54464059"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201287762940",
+    "messageId": "wamid.HBgMMjAxMjg3NzYyOTQwFQIAERgSNDUxMjBDREYxRkZBMkREMTUxAA==",
+    "statusTimestampUTC": "2026-07-03T08:49:06.000Z",
+    "logTimeUTC": "2026-07-03 08:49:07",
+    "requestId": "fvxz6-1783068547570-4e27a60659d3"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201287762940",
+    "messageId": "wamid.HBgMMjAxMjg3NzYyOTQwFQIAERgSNDUxMjBDREYxRkZBMkREMTUxAA==",
+    "statusTimestampUTC": "2026-07-03T08:49:06.000Z",
+    "logTimeUTC": "2026-07-03 08:49:07",
+    "requestId": "b9ww9-1783068547185-017d7405382c"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "201288634409",
+    "messageId": "wamid.HBgMMjAxMjg4NjM0NDA5FQIAERgSN0JEODY5MDVBOEFGNUQyRTQ4AA==",
+    "statusTimestampUTC": "2026-07-03T08:48:37.000Z",
+    "logTimeUTC": "2026-07-03 08:48:37",
+    "requestId": "h6nnj-1783068517952-a04c64f3dd5b"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "201288634409",
+    "messageId": "wamid.HBgMMjAxMjg4NjM0NDA5FQIAERgSN0JEODY5MDVBOEFGNUQyRTQ4AA==",
+    "statusTimestampUTC": "2026-07-03T08:57:56.000Z",
+    "logTimeUTC": "2026-07-03 08:57:57",
+    "requestId": "mgl2h-1783069077550-4ac8b20f1730"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "201288634409",
+    "messageId": "wamid.HBgMMjAxMjg4NjM0NDA5FQIAERgSN0JEODY5MDVBOEFGNUQyRTQ4AA==",
+    "statusTimestampUTC": "2026-07-03T08:48:32.000Z",
+    "logTimeUTC": "2026-07-03 08:48:32",
+    "requestId": "mgl2h-1783068512636-b9f2047e19bd"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "31684090866",
+    "messageId": "wamid.HBgLMzE2ODQwOTA4NjYVAgARGBI4MzNENzRDRTZDRjY4NTJGOUMA",
+    "statusTimestampUTC": "2026-07-02T05:08:46.000Z",
+    "logTimeUTC": "2026-07-02 05:08:46",
+    "requestId": "rgjv2-1782968926899-5e5f34ea84de"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "31684090866",
+    "messageId": "wamid.HBgLMzE2ODQwOTA4NjYVAgARGBI4MzNENzRDRTZDRjY4NTJGOUMA",
+    "statusTimestampUTC": "2026-07-02T05:08:46.000Z",
+    "logTimeUTC": "2026-07-02 05:08:46",
+    "requestId": "6mlqd-1782968926737-ad24c7e464cc"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "32465600516",
+    "messageId": "wamid.HBgLMzI0NjU2MDA1MTYVAgARGBJBOTMxQUNGMERFMjYyMUM5OUQA",
+    "statusTimestampUTC": "2026-07-02T08:21:54.000Z",
+    "logTimeUTC": "2026-07-02 08:21:55",
+    "requestId": "4vlf6-1782980515357-d9ec34028a8d"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "32465600516",
+    "messageId": "wamid.HBgLMzI0NjU2MDA1MTYVAgARGBJBOTMxQUNGMERFMjYyMUM5OUQA",
+    "statusTimestampUTC": "2026-07-02T08:21:54.000Z",
+    "logTimeUTC": "2026-07-02 08:21:55",
+    "requestId": "hcfrn-1782980515280-050b21b3f6f6"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "32465600516",
+    "messageId": "wamid.HBgLMzI0NjU2MDA1MTYVAgARGBJBOTMxQUNGMERFMjYyMUM5OUQA",
+    "statusTimestampUTC": "2026-07-02T08:21:54.000Z",
+    "logTimeUTC": "2026-07-02 08:21:55",
+    "requestId": "gfzb9-1782980515021-b9eae607e4a2"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "32493829241",
+    "messageId": "wamid.HBgLMzI0OTM4MjkyNDEVAgARGBI5MTAyQzJFNzc0ODI2MDZFNzIA",
+    "statusTimestampUTC": "2026-07-02T04:58:06.000Z",
+    "logTimeUTC": "2026-07-02 04:58:08",
+    "requestId": "nch8h-1782968287256-44635055e877"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "32493829241",
+    "messageId": "wamid.HBgLMzI0OTM4MjkyNDEVAgARGBI0OTA0RTcxNThERENGRjcwRjAA",
+    "statusTimestampUTC": "2026-07-02T05:09:20.000Z",
+    "logTimeUTC": "2026-07-02 05:09:20",
+    "requestId": "m4hp9-1782968960671-82b806006c93"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "32493829241",
+    "messageId": "wamid.HBgLMzI0OTM4MjkyNDEVAgARGBJCMjNDQjU4MDBGRTMwMzVFQUUA",
+    "statusTimestampUTC": "2026-07-02T05:09:19.000Z",
+    "logTimeUTC": "2026-07-02 05:09:20",
+    "requestId": "bqnpv-1782968960447-cb8d18146104"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "393925298775",
+    "messageId": "wamid.HBgMMzkzOTI1Mjk4Nzc1FQIAERgSRkI1OUQ0M0Q5NUE5N0RGMDFGAA==",
+    "statusTimestampUTC": "2026-07-02T14:55:11.000Z",
+    "logTimeUTC": "2026-07-02 14:55:12",
+    "requestId": "9pvp8-1783004112476-4d2c244b4c87"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "393925298775",
+    "messageId": "wamid.HBgMMzkzOTI1Mjk4Nzc1FQIAERgSRkI1OUQ0M0Q5NUE5N0RGMDFGAA==",
+    "statusTimestampUTC": "2026-07-02T14:55:11.000Z",
+    "logTimeUTC": "2026-07-02 14:55:12",
+    "requestId": "q5xpb-1783004112401-a03283c5fd83"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "436763571392",
+    "messageId": "wamid.HBgMNDM2NzYzNTcxMzkyFQIAERgSMzEwMkJENTE0OUNGNDNCRTc5AA==",
+    "statusTimestampUTC": "2026-07-02T10:40:17.000Z",
+    "logTimeUTC": "2026-07-02 10:40:18",
+    "requestId": "sk2sm-1782988818436-8efa9081d01a"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "436763571392",
+    "messageId": "wamid.HBgMNDM2NzYzNTcxMzkyFQIAERgSMzEwMkJENTE0OUNGNDNCRTc5AA==",
+    "statusTimestampUTC": "2026-07-02T10:40:17.000Z",
+    "logTimeUTC": "2026-07-02 10:40:17",
+    "requestId": "n982r-1782988817725-f353b2be0eba"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "46700141978",
+    "messageId": "wamid.HBgLNDY3MDAxNDE5NzgVAgARGBI4MEY3ODM4NkQ5RjU5NDFFNzgA",
+    "statusTimestampUTC": "2026-07-02T14:42:36.000Z",
+    "logTimeUTC": "2026-07-02 14:42:36",
+    "requestId": "9bbb5-1783003356949-20cf7118d6a9"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "46700141978",
+    "messageId": "wamid.HBgLNDY3MDAxNDE5NzgVAgARGBI4MEY3ODM4NkQ5RjU5NDFFNzgA",
+    "statusTimestampUTC": "2026-07-02T14:42:36.000Z",
+    "logTimeUTC": "2026-07-02 14:42:36",
+    "requestId": "vjn4c-1783003356743-f67a1ba50e55"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "491782708685",
+    "messageId": "wamid.HBgMNDkxNzgyNzA4Njg1FQIAERgSMEU2RTREMDkyRTFBMjJERkQ1AA==",
+    "statusTimestampUTC": "2026-07-02T16:14:46.000Z",
+    "logTimeUTC": "2026-07-02 16:14:47",
+    "requestId": "4xz7v-1783008886997-39a2289feca5"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "491782708685",
+    "messageId": "wamid.HBgMNDkxNzgyNzA4Njg1FQIAERgSMEU2RTREMDkyRTFBMjJERkQ1AA==",
+    "statusTimestampUTC": "2026-07-02T16:14:55.000Z",
+    "logTimeUTC": "2026-07-02 16:14:55",
+    "requestId": "vlmlj-1783008895850-c1e4a60a4e0a"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "491782708685",
+    "messageId": "wamid.HBgMNDkxNzgyNzA4Njg1FQIAERgSMEU2RTREMDkyRTFBMjJERkQ1AA==",
+    "statusTimestampUTC": "2026-07-02T16:14:45.000Z",
+    "logTimeUTC": "2026-07-02 16:14:46",
+    "requestId": "vd9wc-1783008886512-553acc193692"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "491791005216",
+    "messageId": "wamid.HBgMNDkxNzkxMDA1MjE2FQIAERgSQzU4MzBFNzI4MUZDQjgxOTUyAA==",
+    "statusTimestampUTC": "2026-07-02T02:51:26.000Z",
+    "logTimeUTC": "2026-07-02 02:51:28",
+    "requestId": "kshnh-1782960688461-c7f6d4d4f511"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "819017274922",
+    "messageId": "wamid.HBgMODE5MDE3Mjc0OTIyFQIAERgSMkE0RjYwRUYxMjcyMkY5ODdGAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:44.000Z",
+    "logTimeUTC": "2026-07-03 08:48:45",
+    "requestId": "7g9df-1783068525428-86ae7ff4024c"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "819017274922",
+    "messageId": "wamid.HBgMODE5MDE3Mjc0OTIyFQIAERgSMkE0RjYwRUYxMjcyMkY5ODdGAA==",
+    "statusTimestampUTC": "2026-07-03T11:00:47.000Z",
+    "logTimeUTC": "2026-07-03 11:00:49",
+    "requestId": "dbqb6-1783076448119-30f26056f344"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "819017274922",
+    "messageId": "wamid.HBgMODE5MDE3Mjc0OTIyFQIAERgSMkE0RjYwRUYxMjcyMkY5ODdGAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:37.000Z",
+    "logTimeUTC": "2026-07-03 08:48:39",
+    "requestId": "gsgd9-1783068519009-3deb31c58a15"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "96555116257",
+    "messageId": "wamid.HBgLOTY1NTUxMTYyNTcVAgARGBJDQjJEMjIxM0Q4RkI4NzNDOEEA",
+    "statusTimestampUTC": "2026-07-02T06:30:53.000Z",
+    "logTimeUTC": "2026-07-02 06:30:53",
+    "requestId": "xshcj-1782973853669-11014bc51945"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "96555116257",
+    "messageId": "wamid.HBgLOTY1NTUxMTYyNTcVAgARGBJDQjJEMjIxM0Q4RkI4NzNDOEEA",
+    "statusTimestampUTC": "2026-07-02T06:30:53.000Z",
+    "logTimeUTC": "2026-07-02 06:30:53",
+    "requestId": "cpjml-1782973853646-2292523d9991"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "96555116257",
+    "messageId": "wamid.HBgLOTY1NTUxMTYyNTcVAgARGBJDQjJEMjIxM0Q4RkI4NzNDOEEA",
+    "statusTimestampUTC": "2026-07-02T06:30:52.000Z",
+    "logTimeUTC": "2026-07-02 06:30:52",
+    "requestId": "9b5j7-1782973852864-605bdaf7a70f"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "96555991739",
+    "messageId": "wamid.HBgLOTY1NTU5OTE3MzkVAgARGBI2NjA3QURFRjVGMDc1RUQzMDcA",
+    "statusTimestampUTC": "2026-07-02T01:59:00.000Z",
+    "logTimeUTC": "2026-07-02 01:59:00",
+    "requestId": "l5k2n-1782957540946-204a805da86a"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "96555991739",
+    "messageId": "wamid.HBgLOTY1NTU5OTE3MzkVAgARGBI2NjA3QURFRjVGMDc1RUQzMDcA",
+    "statusTimestampUTC": "2026-07-02T01:59:00.000Z",
+    "logTimeUTC": "2026-07-02 01:59:01",
+    "requestId": "xvz7r-1782957541030-3f2d83cf94c0"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "96555991739",
+    "messageId": "wamid.HBgLOTY1NTU5OTE3MzkVAgARGBI2NjA3QURFRjVGMDc1RUQzMDcA",
+    "statusTimestampUTC": "2026-07-02T01:59:00.000Z",
+    "logTimeUTC": "2026-07-02 01:59:00",
+    "requestId": "gb8fb-1782957540491-06dd7766e602"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "96560066057",
+    "messageId": "wamid.HBgLOTY1NjAwNjYwNTcVAgARGBI4QzZCOUI0NUI1NzcxMjVDNzUA",
+    "statusTimestampUTC": "2026-07-02T04:43:48.000Z",
+    "logTimeUTC": "2026-07-02 04:43:50",
+    "requestId": "4gxm9-1782967430305-ef6cd16c90f0"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "96560094100",
+    "messageId": "wamid.HBgLOTY1NjAwOTQxMDAVAgARGBJBNjkxM0E3RjNEMjc2QjNENzUA",
+    "statusTimestampUTC": "2026-07-02T04:34:22.000Z",
+    "logTimeUTC": "2026-07-02 04:34:25",
+    "requestId": "74cmt-1782966865027-02aa775bc137"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "96566414042",
+    "messageId": "wamid.HBgLOTY1NjY0MTQwNDIVAgARGBIxMEFCMTAwQ0RFQkJCNzY1MEIA",
+    "statusTimestampUTC": "2026-07-02T04:36:34.000Z",
+    "logTimeUTC": "2026-07-02 04:36:36",
+    "requestId": "fxq5j-1782966996649-2903df79e2b9"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "96599499217",
+    "messageId": "wamid.HBgLOTY1OTk0OTkyMTcVAgARGBI1REQwNzQyRTc2QjhCQUI0RDYA",
+    "statusTimestampUTC": "2026-07-03T08:49:23.000Z",
+    "logTimeUTC": "2026-07-03 08:49:24",
+    "requestId": "86q98-1783068564141-dd6a0fd3438f"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "96599499217",
+    "messageId": "wamid.HBgLOTY1OTk0OTkyMTcVAgARGBI1REQwNzQyRTc2QjhCQUI0RDYA",
+    "statusTimestampUTC": "2026-07-03T08:49:23.000Z",
+    "logTimeUTC": "2026-07-03 08:49:24",
+    "requestId": "9x48t-1783068564222-87b8bf953e3c"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "96599499217",
+    "messageId": "wamid.HBgLOTY1OTk0OTkyMTcVAgARGBI1REQwNzQyRTc2QjhCQUI0RDYA",
+    "statusTimestampUTC": "2026-07-03T08:49:23.000Z",
+    "logTimeUTC": "2026-07-03 08:49:23",
+    "requestId": "xjbrn-1783068563629-8507319d3cd4"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966503135773",
+    "messageId": "wamid.HBgMOTY2NTAzMTM1NzczFQIAERgSNjA1OEQ1QTBDMTZFQkZEMUI2AA==",
+    "statusTimestampUTC": "2026-07-02T09:38:05.000Z",
+    "logTimeUTC": "2026-07-02 09:38:06",
+    "requestId": "qdzst-1782985086052-33fbda3107a3"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966503135773",
+    "messageId": "wamid.HBgMOTY2NTAzMTM1NzczFQIAERgSNjA1OEQ1QTBDMTZFQkZEMUI2AA==",
+    "statusTimestampUTC": "2026-07-02T09:38:05.000Z",
+    "logTimeUTC": "2026-07-02 09:38:06",
+    "requestId": "ml9zf-1782985085979-af5e30e8f6eb"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966503135773",
+    "messageId": "wamid.HBgMOTY2NTAzMTM1NzczFQIAERgSNjA1OEQ1QTBDMTZFQkZEMUI2AA==",
+    "statusTimestampUTC": "2026-07-02T09:38:04.000Z",
+    "logTimeUTC": "2026-07-02 09:38:05",
+    "requestId": "shc9j-1782985085472-8745504f75f5"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966505418479",
+    "messageId": "wamid.HBgMOTY2NTA1NDE4NDc5FQIAERgSNDY4QkRCQzlFQjk5QjM2MTZBAA==",
+    "statusTimestampUTC": "2026-07-03T11:07:49.000Z",
+    "logTimeUTC": "2026-07-03 11:07:50",
+    "requestId": "xsfq7-1783076870081-e2c80a51a100"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966505418479",
+    "messageId": "wamid.HBgMOTY2NTA1NDE4NDc5FQIAERgSNDY4QkRCQzlFQjk5QjM2MTZBAA==",
+    "statusTimestampUTC": "2026-07-03T11:07:49.000Z",
+    "logTimeUTC": "2026-07-03 11:07:49",
+    "requestId": "g9qkz-1783076869971-82ccd355d811"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966505418479",
+    "messageId": "wamid.HBgMOTY2NTA1NDE4NDc5FQIAERgSNDY4QkRCQzlFQjk5QjM2MTZBAA==",
+    "statusTimestampUTC": "2026-07-03T11:07:48.000Z",
+    "logTimeUTC": "2026-07-03 11:07:49",
+    "requestId": "cmgh9-1783076869385-f85b9b0f511d"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966544938647",
+    "messageId": "wamid.HBgMOTY2NTQ0OTM4NjQ3FQIAERgSQTVBRTM5QzVDQTZGRTAxRTM3AA==",
+    "statusTimestampUTC": "2026-07-03T08:48:31.000Z",
+    "logTimeUTC": "2026-07-03 08:48:31",
+    "requestId": "7l5c6-1783068511927-8933426d03a9"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966544938647",
+    "messageId": "wamid.HBgMOTY2NTQ0OTM4NjQ3FQIAERgSODVEMkRCNDMzMzI5NDBGMjc3AA==",
+    "statusTimestampUTC": "2026-07-03T08:50:07.000Z",
+    "logTimeUTC": "2026-07-03 08:50:08",
+    "requestId": "q6qvp-1783068608290-300b149a4498"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966544938647",
+    "messageId": "wamid.HBgMOTY2NTQ0OTM4NjQ3FQIAERgSODVEMkRCNDMzMzI5NDBGMjc3AA==",
+    "statusTimestampUTC": "2026-07-03T08:50:07.000Z",
+    "logTimeUTC": "2026-07-03 08:50:08",
+    "requestId": "v4zdf-1783068608331-2839dd467578"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966545044984",
+    "messageId": "wamid.HBgMOTY2NTQ1MDQ0OTg0FQIAERgSRTM2NkI0NDMwN0RFQkVGNDkyAA==",
+    "statusTimestampUTC": "2026-07-03T10:32:49.000Z",
+    "logTimeUTC": "2026-07-03 10:32:49",
+    "requestId": "kb9dn-1783074769729-ad80d3c2b540"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966545044984",
+    "messageId": "wamid.HBgMOTY2NTQ1MDQ0OTg0FQIAERgSRTM2NkI0NDMwN0RFQkVGNDkyAA==",
+    "statusTimestampUTC": "2026-07-03T10:32:49.000Z",
+    "logTimeUTC": "2026-07-03 10:32:49",
+    "requestId": "6687x-1783074769643-6d5504f05852"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966545044984",
+    "messageId": "wamid.HBgMOTY2NTQ1MDQ0OTg0FQIAERgSRTM2NkI0NDMwN0RFQkVGNDkyAA==",
+    "statusTimestampUTC": "2026-07-03T10:32:48.000Z",
+    "logTimeUTC": "2026-07-03 10:32:49",
+    "requestId": "98k4l-1783074769181-ac386fae5655"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966546224938",
+    "messageId": "wamid.HBgMOTY2NTQ2MjI0OTM4FQIAERgSNDgwQ0Q3MzNCMDQ0MjgzRkUxAA==",
+    "statusTimestampUTC": "2026-07-02T10:39:40.000Z",
+    "logTimeUTC": "2026-07-02 10:39:40",
+    "requestId": "4857g-1782988780745-6c4e85186d9e"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966546224938",
+    "messageId": "wamid.HBgMOTY2NTQ2MjI0OTM4FQIAERgSNDgwQ0Q3MzNCMDQ0MjgzRkUxAA==",
+    "statusTimestampUTC": "2026-07-02T10:39:40.000Z",
+    "logTimeUTC": "2026-07-02 10:39:40",
+    "requestId": "g8ckl-1782988780746-febe4b8f9d04"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966546224938",
+    "messageId": "wamid.HBgMOTY2NTQ2MjI0OTM4FQIAERgSNDgwQ0Q3MzNCMDQ0MjgzRkUxAA==",
+    "statusTimestampUTC": "2026-07-02T10:39:39.000Z",
+    "logTimeUTC": "2026-07-02 10:39:40",
+    "requestId": "pj2zw-1782988780219-dd30508bd042"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966563026966",
+    "messageId": "wamid.HBgMOTY2NTYzMDI2OTY2FQIAERgSRTU0MkMzM0IzMTI0QTYyNzM4AA==",
+    "statusTimestampUTC": "2026-07-03T08:48:29.000Z",
+    "logTimeUTC": "2026-07-03 08:48:30",
+    "requestId": "bz8b9-1783068510082-239c5925c331"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966563026966",
+    "messageId": "wamid.HBgMOTY2NTYzMDI2OTY2FQIAERgSRTU0MkMzM0IzMTI0QTYyNzM4AA==",
+    "statusTimestampUTC": "2026-07-03T08:48:28.000Z",
+    "logTimeUTC": "2026-07-03 08:48:29",
+    "requestId": "s6cvr-1783068509328-9947bcedff37"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966565945215",
+    "messageId": "wamid.HBgMOTY2NTY1OTQ1MjE1FQIAERgSMzM0MkE0REI1RDM1NkVDRUVDAA==",
+    "statusTimestampUTC": "2026-07-02T16:39:50.000Z",
+    "logTimeUTC": "2026-07-02 16:39:52",
+    "requestId": "vfxvw-1783010391346-de15f60ad7b0"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966569130578",
+    "messageId": "wamid.HBgMOTY2NTY5MTMwNTc4FQIAERgSODQwOThDOUI3MkUwNjgyRjMyAA==",
+    "statusTimestampUTC": "2026-07-02T03:24:24.000Z",
+    "logTimeUTC": "2026-07-02 03:24:26",
+    "requestId": "llvc5-1782962665288-2115a2ac839f"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966569355057",
+    "messageId": "wamid.HBgMOTY2NTY5MzU1MDU3FQIAERgSM0UwRDMxOTNEMDlBOTM4NjVFAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:26.000Z",
+    "logTimeUTC": "2026-07-03 08:48:26",
+    "requestId": "4k82p-1783068506854-109245dd9ddb"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966569355057",
+    "messageId": "wamid.HBgMOTY2NTY5MzU1MDU3FQIAERgSRkZCNDg2MDZGQTBGOTY4QTJCAA==",
+    "statusTimestampUTC": "2026-07-03T08:49:45.000Z",
+    "logTimeUTC": "2026-07-03 08:49:45",
+    "requestId": "mb67q-1783068585763-547f5a72ed42"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966569355057",
+    "messageId": "wamid.HBgMOTY2NTY5MzU1MDU3FQIAERgSRkZCNDg2MDZGQTBGOTY4QTJCAA==",
+    "statusTimestampUTC": "2026-07-03T08:49:45.000Z",
+    "logTimeUTC": "2026-07-03 08:49:45",
+    "requestId": "zj4tj-1783068585609-fc1a607ebf2f"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966569594370",
+    "messageId": "wamid.HBgMOTY2NTY5NTk0MzcwFQIAERgSQ0ZGQUE4N0M0MzNEOEZFMkMyAA==",
+    "statusTimestampUTC": "2026-07-03T10:06:35.000Z",
+    "logTimeUTC": "2026-07-03 10:06:37",
+    "requestId": "5tt4z-1783073196301-6143b4e5fcfa"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966569594370",
+    "messageId": "wamid.HBgMOTY2NTY5NTk0MzcwFQIAERgSQ0ZGQUE4N0M0MzNEOEZFMkMyAA==",
+    "statusTimestampUTC": "2026-07-03T10:07:18.000Z",
+    "logTimeUTC": "2026-07-03 10:07:18",
+    "requestId": "nkrdg-1783073238932-9705ce09257f"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966569594370",
+    "messageId": "wamid.HBgMOTY2NTY5NTk0MzcwFQIAERgSQ0ZGQUE4N0M0MzNEOEZFMkMyAA==",
+    "statusTimestampUTC": "2026-07-03T08:48:40.000Z",
+    "logTimeUTC": "2026-07-03 08:48:41",
+    "requestId": "ltgnw-1783068521675-4d7afea1dcdb"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966574181705",
+    "messageId": "wamid.HBgMOTY2NTc0MTgxNzA1FQIAERgSRUY4QjZDQ0EyODQyMzMwNzcyAA==",
+    "statusTimestampUTC": "2026-07-02T12:09:52.000Z",
+    "logTimeUTC": "2026-07-02 12:09:52",
+    "requestId": "h2zh8-1782994192566-bfdafadbc4dd"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "966574181705",
+    "messageId": "wamid.HBgMOTY2NTc0MTgxNzA1FQIAERgSRUY4QjZDQ0EyODQyMzMwNzcyAA==",
+    "statusTimestampUTC": "2026-07-02T12:09:54.000Z",
+    "logTimeUTC": "2026-07-02 12:09:55",
+    "requestId": "m98jt-1782994195404-9e578cc218bc"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966574181705",
+    "messageId": "wamid.HBgMOTY2NTc0MTgxNzA1FQIAERgSRUY4QjZDQ0EyODQyMzMwNzcyAA==",
+    "statusTimestampUTC": "2026-07-02T12:09:51.000Z",
+    "logTimeUTC": "2026-07-02 12:09:52",
+    "requestId": "xrqkv-1782994192182-69603e0fd3f5"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "966597287407",
+    "messageId": "wamid.HBgMOTY2NTk3Mjg3NDA3FQIAERgSQUNBNTlFOUZGOTNGM0Y5NjY4AA==",
+    "statusTimestampUTC": "2026-07-02T02:08:39.000Z",
+    "logTimeUTC": "2026-07-02 02:08:40",
+    "requestId": "p85d5-1782958119976-e96d890bd262"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "966597287407",
+    "messageId": "wamid.HBgMOTY2NTk3Mjg3NDA3FQIAERgSQUNBNTlFOUZGOTNGM0Y5NjY4AA==",
+    "statusTimestampUTC": "2026-07-02T02:08:38.000Z",
+    "logTimeUTC": "2026-07-02 02:08:38",
+    "requestId": "k5dks-1782958118736-cef81f09f135"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971501288140",
+    "messageId": "wamid.HBgMOTcxNTAxMjg4MTQwFQIAERgSNjEwNDRGQUQxRTU2MDMxQzJCAA==",
+    "statusTimestampUTC": "2026-07-03T04:34:51.000Z",
+    "logTimeUTC": "2026-07-03 04:34:52",
+    "requestId": "hm4t8-1783053292457-bbe39a238a2a"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971501288140",
+    "messageId": "wamid.HBgMOTcxNTAxMjg4MTQwFQIAERgSNjEwNDRGQUQxRTU2MDMxQzJCAA==",
+    "statusTimestampUTC": "2026-07-03T04:34:51.000Z",
+    "logTimeUTC": "2026-07-03 04:34:51",
+    "requestId": "ngflg-1783053291898-857ffae891f7"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971506721182",
+    "messageId": "wamid.HBgMOTcxNTA2NzIxMTgyFQIAERgSOTczOEIyQ0M4M0ZFNUYxMUQ5AA==",
+    "statusTimestampUTC": "2026-07-03T08:52:55.000Z",
+    "logTimeUTC": "2026-07-03 08:52:56",
+    "requestId": "7kzwh-1783068776372-7f10d734384e"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971506721182",
+    "messageId": "wamid.HBgMOTcxNTA2NzIxMTgyFQIAERgSOTczOEIyQ0M4M0ZFNUYxMUQ5AA==",
+    "statusTimestampUTC": "2026-07-03T08:52:55.000Z",
+    "logTimeUTC": "2026-07-03 08:52:56",
+    "requestId": "c284z-1783068776461-8e2cb7a81104"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971506721182",
+    "messageId": "wamid.HBgMOTcxNTA2NzIxMTgyFQIAERgSOTczOEIyQ0M4M0ZFNUYxMUQ5AA==",
+    "statusTimestampUTC": "2026-07-03T08:52:55.000Z",
+    "logTimeUTC": "2026-07-03 08:52:55",
+    "requestId": "grgv2-1783068775770-3c6fc85579e3"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971508634567",
+    "messageId": "wamid.HBgMOTcxNTA4NjM0NTY3FQIAERgSM0JDMEE4NkYwQjlDQzM5MzFBAA==",
+    "statusTimestampUTC": "2026-07-02T00:05:22.000Z",
+    "logTimeUTC": "2026-07-02 00:05:23",
+    "requestId": "rphrw-1782950723084-25e7841d60cf"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971529208294",
+    "messageId": "wamid.HBgMOTcxNTI5MjA4Mjk0FQIAERgSOEZENzE1RTgzQzA2MkVCREFDAA==",
+    "statusTimestampUTC": "2026-07-02T10:29:06.000Z",
+    "logTimeUTC": "2026-07-02 10:29:07",
+    "requestId": "hndcp-1782988147233-8bcf143767a1"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971529208294",
+    "messageId": "wamid.HBgMOTcxNTI5MjA4Mjk0FQIAERgSOEZENzE1RTgzQzA2MkVCREFDAA==",
+    "statusTimestampUTC": "2026-07-02T10:29:06.000Z",
+    "logTimeUTC": "2026-07-02 10:29:07",
+    "requestId": "bbscp-1782988147500-ba48645d3b63"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971529208294",
+    "messageId": "wamid.HBgMOTcxNTI5MjA4Mjk0FQIAERgSOEZENzE1RTgzQzA2MkVCREFDAA==",
+    "statusTimestampUTC": "2026-07-02T10:29:06.000Z",
+    "logTimeUTC": "2026-07-02 10:29:07",
+    "requestId": "45h7t-1782988147002-6273e3d1fb64"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971543214101",
+    "messageId": "wamid.HBgMOTcxNTQzMjE0MTAxFQIAERgSMDc5RTYwN0UxRkQ5MTA5NEI0AA==",
+    "statusTimestampUTC": "2026-07-02T11:56:06.000Z",
+    "logTimeUTC": "2026-07-02 11:56:07",
+    "requestId": "v7gmb-1782993366973-4b0802c4c1b1"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971543214101",
+    "messageId": "wamid.HBgMOTcxNTQzMjE0MTAxFQIAERgSNjhBMDI2RDRGMTlENzY3MTc1AA==",
+    "statusTimestampUTC": "2026-07-02T11:56:11.000Z",
+    "logTimeUTC": "2026-07-02 11:56:11",
+    "requestId": "rbn8c-1782993371738-ee95b73a94d3"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971543214101",
+    "messageId": "wamid.HBgMOTcxNTQzMjE0MTAxFQIAERgSMDc5RTYwN0UxRkQ5MTA5NEI0AA==",
+    "statusTimestampUTC": "2026-07-02T11:56:06.000Z",
+    "logTimeUTC": "2026-07-02 11:56:06",
+    "requestId": "z66bq-1782993366504-ad676a86d6d2"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971552297764",
+    "messageId": "wamid.HBgMOTcxNTUyMjk3NzY0FQIAERgSNEI5NzQ4Rjg4NEYzMUQyNzQ5AA==",
+    "statusTimestampUTC": "2026-07-03T08:49:23.000Z",
+    "logTimeUTC": "2026-07-03 08:49:23",
+    "requestId": "rn5wv-1783068563934-97ec571ad16b"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971552297764",
+    "messageId": "wamid.HBgMOTcxNTUyMjk3NzY0FQIAERgSNEI5NzQ4Rjg4NEYzMUQyNzQ5AA==",
+    "statusTimestampUTC": "2026-07-03T08:49:23.000Z",
+    "logTimeUTC": "2026-07-03 08:49:23",
+    "requestId": "s22qq-1783068563614-fb3904b3e265"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971557444244",
+    "messageId": "wamid.HBgMOTcxNTU3NDQ0MjQ0FQIAERgSNkU2MkY2ODQyQzk3MTBGNzMwAA==",
+    "statusTimestampUTC": "2026-07-02T04:03:17.000Z",
+    "logTimeUTC": "2026-07-02 04:03:19",
+    "requestId": "977ws-1782964998934-a1bbfa321124"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971563993769",
+    "messageId": "wamid.HBgMOTcxNTYzOTkzNzY5FQIAERgSNTc4MkFCRTREOTBGNjA3QzNGAA==",
+    "statusTimestampUTC": "2026-07-02T03:44:21.000Z",
+    "logTimeUTC": "2026-07-02 03:44:21",
+    "requestId": "ztzx5-1782963861633-122444746ef5"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971563993769",
+    "messageId": "wamid.HBgMOTcxNTYzOTkzNzY5FQIAERgSNTc4MkFCRTREOTBGNjA3QzNGAA==",
+    "statusTimestampUTC": "2026-07-02T03:44:21.000Z",
+    "logTimeUTC": "2026-07-02 03:44:21",
+    "requestId": "7wh6v-1782963861913-b2840cf23cd7"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971563993769",
+    "messageId": "wamid.HBgMOTcxNTYzOTkzNzY5FQIAERgSNTc4MkFCRTREOTBGNjA3QzNGAA==",
+    "statusTimestampUTC": "2026-07-02T03:44:20.000Z",
+    "logTimeUTC": "2026-07-02 03:44:21",
+    "requestId": "7f8z4-1782963861277-2436307bcd49"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971564821319",
+    "messageId": "wamid.HBgMOTcxNTY0ODIxMzE5FQIAERgSNzUyMjM5OTNCMDFDQUExMTRFAA==",
+    "statusTimestampUTC": "2026-07-03T08:54:19.000Z",
+    "logTimeUTC": "2026-07-03 08:54:19",
+    "requestId": "9vkgm-1783068859374-4a008c4f95ed"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971564821319",
+    "messageId": "wamid.HBgMOTcxNTY0ODIxMzE5FQIAERgSN0VENDM3MjczMTY0NDFGQUQyAA==",
+    "statusTimestampUTC": "2026-07-03T08:54:43.000Z",
+    "logTimeUTC": "2026-07-03 08:54:43",
+    "requestId": "h4t4p-1783068883788-b13fabfc8e2b"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971564821319",
+    "messageId": "wamid.HBgMOTcxNTY0ODIxMzE5FQIAERgSNzUyMjM5OTNCMDFDQUExMTRFAA==",
+    "statusTimestampUTC": "2026-07-03T08:54:18.000Z",
+    "logTimeUTC": "2026-07-03 08:54:19",
+    "requestId": "hb478-1783068859195-e03f1928d251"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971565600336",
+    "messageId": "wamid.HBgMOTcxNTY1NjAwMzM2FQIAERgSMDk4MkI0RTI4N0FGQjUwQzgzAA==",
+    "statusTimestampUTC": "2026-07-02T15:37:09.000Z",
+    "logTimeUTC": "2026-07-02 15:37:10",
+    "requestId": "bndxn-1783006629811-6814ed6cee61"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971565740848",
+    "messageId": "wamid.HBgMOTcxNTY1NzQwODQ4FQIAERgSODAyQzc2QjgyQjU0NUY2RDBDAA==",
+    "statusTimestampUTC": "2026-07-02T04:21:15.000Z",
+    "logTimeUTC": "2026-07-02 04:21:16",
+    "requestId": "xpwmk-1782966076503-fc705569298f"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971565740848",
+    "messageId": "wamid.HBgMOTcxNTY1NzQwODQ4FQIAERgSODAyQzc2QjgyQjU0NUY2RDBDAA==",
+    "statusTimestampUTC": "2026-07-02T04:21:15.000Z",
+    "logTimeUTC": "2026-07-02 04:21:15",
+    "requestId": "zwlrz-1782966075878-7cd4ae35870d"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971566079139",
+    "messageId": "wamid.HBgMOTcxNTY2MDc5MTM5FQIAERgSNTI2NEVBNjVEMjVENzJGODc2AA==",
+    "statusTimestampUTC": "2026-07-02T12:41:06.000Z",
+    "logTimeUTC": "2026-07-02 12:41:08",
+    "requestId": "kf7xh-1782996068114-aa04ffda9745"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971566474769",
+    "messageId": "wamid.HBgMOTcxNTY2NDc0NzY5FQIAERgSMDRCQjU3RjNFQzk4QkNCMjQwAA==",
+    "statusTimestampUTC": "2026-07-02T02:19:06.000Z",
+    "logTimeUTC": "2026-07-02 02:19:07",
+    "requestId": "q2878-1782958747096-a64d35fa3b99"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971566474769",
+    "messageId": "wamid.HBgMOTcxNTY2NDc0NzY5FQIAERgSMDRCQjU3RjNFQzk4QkNCMjQwAA==",
+    "statusTimestampUTC": "2026-07-02T02:19:06.000Z",
+    "logTimeUTC": "2026-07-02 02:19:06",
+    "requestId": "lt6bp-1782958746580-b83d60a6892c"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971568434363",
+    "messageId": "wamid.HBgMOTcxNTY4NDM0MzYzFQIAERgSRUM2QzIwMkE4NjIwMTQ1MDRBAA==",
+    "statusTimestampUTC": "2026-07-02T07:31:43.000Z",
+    "logTimeUTC": "2026-07-02 07:31:43",
+    "requestId": "w8jqg-1782977503887-e792afef1b53"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971568434363",
+    "messageId": "wamid.HBgMOTcxNTY4NDM0MzYzFQIAERgSRUM2QzIwMkE4NjIwMTQ1MDRBAA==",
+    "statusTimestampUTC": "2026-07-02T07:31:43.000Z",
+    "logTimeUTC": "2026-07-02 07:31:44",
+    "requestId": "jnddc-1782977503988-ea6daa28e1b4"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971568434363",
+    "messageId": "wamid.HBgMOTcxNTY4NDM0MzYzFQIAERgSRUM2QzIwMkE4NjIwMTQ1MDRBAA==",
+    "statusTimestampUTC": "2026-07-02T07:31:42.000Z",
+    "logTimeUTC": "2026-07-02 07:31:43",
+    "requestId": "7cf54-1782977503396-5f37b73f6341"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971569888698",
+    "messageId": "wamid.HBgMOTcxNTY5ODg4Njk4FQIAERgSMUYwMjJDOTBCN0U5N0M4NTlBAA==",
+    "statusTimestampUTC": "2026-07-02T03:00:48.000Z",
+    "logTimeUTC": "2026-07-02 03:00:48",
+    "requestId": "fz79w-1782961248637-4576ace4ea9d"
+  },
+  {
+    "kind": "status",
+    "status": "delivered",
+    "recipientId": "971585148644",
+    "messageId": "wamid.HBgMOTcxNTg1MTQ4NjQ0FQIAERgSNzBBQTZCRjZDRTExMjkwMzc3AA==",
+    "statusTimestampUTC": "2026-07-03T09:08:18.000Z",
+    "logTimeUTC": "2026-07-03 09:08:18",
+    "requestId": "sb8tb-1783069698856-7f8f4be189d1"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971585148644",
+    "messageId": "wamid.HBgMOTcxNTg1MTQ4NjQ0FQIAERgSNzBBQTZCRjZDRTExMjkwMzc3AA==",
+    "statusTimestampUTC": "2026-07-03T09:08:18.000Z",
+    "logTimeUTC": "2026-07-03 09:08:18",
+    "requestId": "mp822-1783069698917-991d0895f5ab"
+  },
+  {
+    "kind": "status",
+    "status": "sent",
+    "recipientId": "971585148644",
+    "messageId": "wamid.HBgMOTcxNTg1MTQ4NjQ0FQIAERgSNzBBQTZCRjZDRTExMjkwMzc3AA==",
+    "statusTimestampUTC": "2026-07-03T09:08:17.000Z",
+    "logTimeUTC": "2026-07-03 09:08:18",
+    "requestId": "7smpf-1783069698556-2af5b390eff0"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "971588863254",
+    "messageId": "wamid.HBgMOTcxNTg4ODYzMjU0FQIAERgSRTg1MDNFNjMyMzFFMDRDQjNDAA==",
+    "statusTimestampUTC": "2026-07-02T02:03:23.000Z",
+    "logTimeUTC": "2026-07-02 02:03:23",
+    "requestId": "x8rps-1782957803795-6f20efb0d9a7"
+  },
+  {
+    "kind": "status",
+    "status": "read",
+    "recipientId": "97433744060",
+    "messageId": "wamid.HBgLOTc0MzM3NDQwNjAVAgARGBIxNEIxQjZFMUJFMUE5QUE0RjQA",
+    "statusTimestampUTC": "2026-07-02T05:11:54.000Z",
+    "logTimeUTC": "2026-07-02 05:11:56",
+    "requestId": "hknwp-1782969116404-00a6eb4558ba"
+  }
+]
