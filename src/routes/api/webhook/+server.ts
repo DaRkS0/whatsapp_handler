@@ -62,6 +62,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
   if (["button"].includes(message.type)) {
     const from = message.from; // wa_id (phone without +)
+    const name = message.name || ""; // wa_id (phone without +)
 
     const button = message.button?.payload;
     console.log({ button });
@@ -82,6 +83,8 @@ export const POST: RequestHandler = async ({ request }) => {
       await UpdateDoc("Jadeer", from, {
         confirmed: true,
         lastUpdated: serverTimestamp(),
+        confirmedAt: serverTimestamp(),
+        name
       });
       return json({ success: true });
     }
@@ -112,6 +115,7 @@ export const POST: RequestHandler = async ({ request }) => {
   }
 
   const from = message.from; // wa_id (phone without +)
+  const name = message.name || ""; // wa_id (phone without +)
 
   const text = message.text?.body?.toLowerCase();
   const button = message.button?.payload;
@@ -123,10 +127,11 @@ export const POST: RequestHandler = async ({ request }) => {
   // await sendImageMessage(from, TEST);
   await sendImageMessageAlt(from, TEST);
 
-    await UpdateDoc("Jadeer", from, {
-        confirmed: true,
-        lastUpdated: serverTimestamp(),
-      });
+  await UpdateDoc("Jadeer", from, {
+    confirmed: true,
+    lastUpdated: serverTimestamp(),
+    name
+  });
   return json({ success: true });
 };
 
