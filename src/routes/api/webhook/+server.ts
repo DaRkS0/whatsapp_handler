@@ -78,7 +78,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
       await UpdateDoc("Jadeer", recipientId, {
         [`${statusType}At`]: serverTimestamp(),
-        WasMissing
+                WasMissing:WasMissing!==undefined 
+
       });
     }
   }
@@ -109,7 +110,7 @@ export const POST: RequestHandler = async ({ request }) => {
         lastUpdated: serverTimestamp(),
         confirmedAt: serverTimestamp(),
         name,
-        WasMissing
+        WasMissing:WasMissing!==undefined 
       });
       return json({ success: true });
     }
