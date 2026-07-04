@@ -99,7 +99,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
     if (button === "تأكيد") {
       const TEST = await QRCode.toDataURL(from);
-          const WasMissing = Missing.find((m) => m.phone === from);
+      const WasMissing = Missing.find((m) => m.phone === from);
 
       await sendTextMessage(from);
       // await sendImageMessage(from, TEST);
