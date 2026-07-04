@@ -8,6 +8,7 @@ import {
 import { GetDoc, UpdateDoc } from "$lib/firebase/database/client";
 import QRCode from "qrcode";
 import { serverTimestamp } from "firebase/firestore";
+import Missing from "$lib/numbers_with_time.json";
 
 export const GET: RequestHandler = ({ url }) => {
   const mode = url.searchParams.get("hub.mode");
@@ -63,7 +64,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 
 
- 
+
   for (const status of statuses) {
     const recipientId = status.recipient_id;        // phone number
     const messageId = status.id;                    // wamid, links back to the original template send
@@ -72,10 +73,12 @@ export const POST: RequestHandler = async ({ request }) => {
     const isTemplateOriginated = ['marketing', 'utility', 'authentication']
       .includes(status.pricing?.category); // outgoing status
 
+    const WasMissing = Missing.find((m) => m.phone === recipientId);
     if (isTemplateOriginated) {
 
       await UpdateDoc("Jadeer", recipientId, {
         [`${statusType}At`]: serverTimestamp(),
+        WasMissing
       });
     }
   }
@@ -96,6 +99,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
     if (button === "تأكيد") {
       const TEST = await QRCode.toDataURL(from);
+          const WasMissing = Missing.find((m) => m.phone === from);
+
       await sendTextMessage(from);
       // await sendImageMessage(from, TEST);
       await sendImageMessageAlt(from, TEST);
@@ -103,7 +108,8 @@ export const POST: RequestHandler = async ({ request }) => {
         confirmed: true,
         lastUpdated: serverTimestamp(),
         confirmedAt: serverTimestamp(),
-        name
+        name,
+        WasMissing
       });
       return json({ success: true });
     }
