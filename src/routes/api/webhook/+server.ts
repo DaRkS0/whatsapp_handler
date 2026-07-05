@@ -135,6 +135,9 @@ export const POST: RequestHandler = async ({ request }) => {
     const TEST = await QRCode.toDataURL(from);
     await sendTextMessage(from);
     await sendImageMessageAlt(from, TEST);
+  } else {
+    await sendTextMessage(from, "Phone number not found in our records. Please contact support.");
+
   }
   // // await sendTemplateMessage(from);
   // const TEST = await QRCode.toDataURL(from);
@@ -317,7 +320,7 @@ async function sendTemplateMessage(to: string) {
   }
 }
 
-async function sendTextMessage(to: string) {
+async function sendTextMessage(to: string, newbody: string | null = null) {
   try {
     const res = await fetch(
       `https://graph.facebook.com/v24.0/${PHONE_NUMBER_ID}/messages`,
@@ -334,7 +337,7 @@ async function sendTextMessage(to: string) {
           type: "text",
           text: {
             preview_url: false,
-            body: ` 
+            body: newbody || ` 
             شكرا لإختيارك شركة JADEER
 برجاء الاحتفاظ بالQR code لأمكانية الدخول لفعليات تسكين مشروع Chapters
 `,
