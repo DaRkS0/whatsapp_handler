@@ -7,7 +7,7 @@
       "time": "6:30PM-8:00PM",
       "_source_file": "Shokry"
     },
-     {
+    {
       "name": "Hussein Ashraf",
       "phone": "201151818276",
       "slot": "1",
@@ -3647,6 +3647,12 @@
       "image_name": "اسلام احمد رضا عبدالسميع - 97158865566-630-800.png",
       "offline": "true",
       "_source_file": "qrcodes_log.csv"
+    },
+    {
+      "name": "سيد يوسف محمد",
+      "phone": "96891755342",
+      "slot": "7",
+      "time": "8:00 PM-9:30 PM"
     }
   ]
 }
