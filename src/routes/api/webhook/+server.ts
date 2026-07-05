@@ -76,12 +76,23 @@ export const POST: RequestHandler = async ({ request }) => {
       .includes(status.pricing?.category); // outgoing status
 
     const WasMissing = Missing.find((m) => m.phone === recipientId);
-    if (isTemplateOriginated) {
 
+
+
+    if (statusType === "failed" && Array.isArray(status.errors) && status.errors.length > 0) {
+      const primaryError = status.errors[0];
+      const lastErrorTitle = primaryError.title ?? "";
+      await UpdateDoc("Jadeer", recipientId, {
+        lastErrorTitle
+      });
+    }
+
+
+    if (isTemplateOriginated || statusType === "failed") {
       await UpdateDoc("Jadeer", recipientId, {
         [`${statusType}At`]: serverTimestamp(),
-        WasMissing: WasMissing !== undefined
-
+        WasMissing: WasMissing !== undefined,
+        failed: statusType === "failed"
       });
     }
   }
