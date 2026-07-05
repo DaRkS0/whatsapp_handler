@@ -9,6 +9,8 @@ import { GetDoc, UpdateDoc } from "$lib/firebase/database/client";
 import QRCode from "qrcode";
 import { serverTimestamp } from "firebase/firestore";
 import Missing from "$lib/numbers_with_time.json";
+import Users from "$lib/All_Users.json";
+
 
 export const GET: RequestHandler = ({ url }) => {
   const mode = url.searchParams.get("hub.mode");
@@ -78,7 +80,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
       await UpdateDoc("Jadeer", recipientId, {
         [`${statusType}At`]: serverTimestamp(),
-                WasMissing:WasMissing!==undefined 
+        WasMissing: WasMissing !== undefined
 
       });
     }
@@ -110,7 +112,7 @@ export const POST: RequestHandler = async ({ request }) => {
         lastUpdated: serverTimestamp(),
         confirmedAt: serverTimestamp(),
         name,
-        WasMissing:WasMissing!==undefined 
+        WasMissing: WasMissing !== undefined
       });
       return json({ success: true });
     }
@@ -127,6 +129,13 @@ export const POST: RequestHandler = async ({ request }) => {
   const text = message.text?.body?.toLowerCase();
   const button = message.button?.payload;
 
+  const user = Users.merged_json.find((r) => r.phone === from);
+
+  if (user !== undefined) {
+    const TEST = await QRCode.toDataURL(from);
+    await sendTextMessage(from);
+    await sendImageMessageAlt(from, TEST);
+  }
   // // await sendTemplateMessage(from);
   // const TEST = await QRCode.toDataURL(from);
 
