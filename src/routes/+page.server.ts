@@ -2,7 +2,7 @@ import { GetDoc, GetDocs, UpdateDoc } from "$lib/firebase/database/client";
 import { Timestamp } from "firebase/firestore";
 import type { Actions, PageServerLoad } from "./$types";
 import Statues from "./statuses_deduplicated.json";
-
+import NewUsers from "$lib/NewUsers.json"
 type Status = {
   "kind": string;
   "status": string;
@@ -47,7 +47,8 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
 
   const userssss = await GetDocs("Jadeer");
   const users = userssss.docs.map((u) => {
-    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed,lastErrorTitle } = u.data();
+    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed, lastErrorTitle } = u.data();
+    const sss = NewUsers.find((nu) => nu.phone === u.id)
     //  console.log({confirmedAt})
     return {
       name, phone: u.id, confirmedAt: confirmedAt ? confirmedAt.toDate().toLocaleString
@@ -56,7 +57,8 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
       readAt: readAt ? readAt.toDate().toLocaleString() : "",
       ScanTime: ScanTime ? ScanTime.toDate().toLocaleString() : "",
       failed: failed ? failed ? "Yes" : "NO" : "",
-      lastErrorTitle: lastErrorTitle ? lastErrorTitle : ""
+      lastErrorTitle: lastErrorTitle ? lastErrorTitle : "",
+      NewPatch: sss !== undefined ? "Yes" : "No"
     };
   });
   return {
