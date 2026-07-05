@@ -47,14 +47,16 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
 
   const userssss = await GetDocs("Jadeer");
   const users = userssss.docs.map((u) => {
-    const { name, confirmedAt, deliveredAt, readAt, lastUpdated,ScanTime } = u.data();
+    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed,lastErrorTitle } = u.data();
     //  console.log({confirmedAt})
     return {
       name, phone: u.id, confirmedAt: confirmedAt ? confirmedAt.toDate().toLocaleString
         () : lastUpdated ? lastUpdated.toDate().toLocaleString() : "",
       deliveredAt: deliveredAt ? deliveredAt.toDate().toLocaleString() : "",
       readAt: readAt ? readAt.toDate().toLocaleString() : "",
-      ScanTime: ScanTime ? ScanTime.toDate().toLocaleString() : ""
+      ScanTime: ScanTime ? ScanTime.toDate().toLocaleString() : "",
+      failed: failed ? failed ? "Yes" : "NO" : "",
+      lastErrorTitle: lastErrorTitle ? lastErrorTitle : ""
     };
   });
   return {

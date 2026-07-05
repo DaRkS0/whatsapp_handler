@@ -83,16 +83,17 @@ export const POST: RequestHandler = async ({ request }) => {
       const primaryError = status.errors[0];
       const lastErrorTitle = primaryError.title ?? "";
       await UpdateDoc("Jadeer", recipientId, {
-        lastErrorTitle
+        lastErrorTitle,
+        failed: true,
+        FailedAt: serverTimestamp(),
       });
     }
 
 
-    if (isTemplateOriginated || statusType === "failed") {
+    if (isTemplateOriginated) {
       await UpdateDoc("Jadeer", recipientId, {
         [`${statusType}At`]: serverTimestamp(),
         WasMissing: WasMissing !== undefined,
-        failed: statusType === "failed"
       });
     }
   }
