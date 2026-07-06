@@ -4,7 +4,11 @@
 
   function getDay1Scans(users: typeof data.users) {
     const day1Scans = users
-      .filter((user) => user.NewPatch === "No" && user.ScanTime.length > 0)
+      .filter(
+        (user) =>
+          user.ScanTime.length > 0 && !user.ClientName.toLowerCase().includes("test"),
+      )
+      .toSorted((a, b) => a.SlotTime.localeCompare(b.SlotTime))
       .map((user) => {
         const { ClientName, SlotTime, ScanTime, phone } = user;
         return { ClientName, phone, SlotTime, ScanTime };

@@ -152,13 +152,13 @@ const toUTC3String = (timestamp: any): string => {
 export const load: PageServerLoad = async ({ params, cookies }) => {
 
 
-  for (const status of NewUsers) {
-    const ms = await GetDoc("Jadeer", status.phone)
-    if (!ms.exists()) {
-      console.log(status)
-    }
-  }
-  console.log({ length: NewUsers.length })
+  // for (const status of NewUsers) {
+  //   const ms = await GetDoc("Jadeer", status.phone)
+  //   if (!ms.exists()) {
+  //     console.log(status)
+  //   }
+  // }
+  // console.log({ length: NewUsers.length })
 
   //   let notex: string[] = []
   // for (const status of Statues) {
