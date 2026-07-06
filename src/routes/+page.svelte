@@ -35,7 +35,7 @@
 
 <div class="h-full w-full flex flex-col items-center justify-center gap-6">
   <p class="font-bold text-xl mb-4">
-    Total Scans: {data.users.filter((u) => u.ScanTime.length > 0).length}
+    Total Scans: {getDay2Scans(data.users).length}
   </p>
   <CsvHandler
     data={data.users.sort((a, b) => b.ScanTime.length - a.ScanTime.length)}
