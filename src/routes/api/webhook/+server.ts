@@ -10,6 +10,7 @@ import QRCode from "qrcode";
 import { serverTimestamp } from "firebase/firestore";
 import Missing from "$lib/numbers_with_time.json";
 import Users from "$lib/All_Users.json";
+import NewUsers from "$lib/NewUsers.json";
 
 
 export const GET: RequestHandler = ({ url }) => {
@@ -142,8 +143,9 @@ export const POST: RequestHandler = async ({ request }) => {
   const button = message.button?.payload;
 
   const user = Users.merged_json.find((r) => r.phone === from);
+  const newUser = NewUsers.find((r) => r.phone === from);
 
-  if (user !== undefined) {
+  if (user !== undefined || newUser !== undefined) {
     const TEST = await QRCode.toDataURL(from);
     await sendTextMessage(from);
     await sendImageMessageAlt(from, TEST);
