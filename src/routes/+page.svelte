@@ -17,11 +17,39 @@
     return day1Scans;
   }
 
+  function parseUKDateTime(dateStr: string): Date | null {
+  // Matches "D/M/YYYY, h:mm:ss AM/PM" or "D/M/YYYY h:mm:ss AM/PM"
+  const match = dateStr.match(
+    /^(\d{1,2})\/(\d{1,2})\/(\d{4}),?\s+(\d{1,2}):(\d{2}):(\d{2})\s*(AM|PM|am|pm)$/
+  );
+  if (!match) return null;
+
+  const [, dayStr, monthStr, yearStr, hourStr, minStr, secStr, ampm] = match;
+
+  let day = parseInt(dayStr, 10);
+  let month = parseInt(monthStr, 10) - 1; // JS months are 0-indexed
+  let year = parseInt(yearStr, 10);
+  let hour = parseInt(hourStr, 10);
+  const min = parseInt(minStr, 10);
+  const sec = parseInt(secStr, 10);
+
+  if (ampm.toUpperCase() === "PM" && hour !== 12) hour += 12;
+  if (ampm.toUpperCase() === "AM" && hour === 12) hour = 0;
+
+  return new Date(year, month, day, hour, min, sec);
+}
+
+function isJuly7(dateStr: string): boolean {
+  const date = parseUKDateTime(dateStr);
+  if (!date) return false;
+  return date.getMonth() === 6 && date.getDate() === 7; // month 6 = July (0-indexed)
+}
+
   function getDay2Scans(users: typeof data.users) {
     const day1Scans = users
       .filter(
         (user) =>
-          user.ScanTime.length > 0 && !user.ClientName.toLowerCase().includes("test")&&user.NewPatch==="Yes",
+          user.ScanTime.length > 0 && !user.ClientName.toLowerCase().includes("test")&&user.NewPatch==="Yes"&&isJuly7(user.ScanTime),
       )
       .toSorted((a, b) => a.SlotTime.localeCompare(b.SlotTime))
       .map((user) => {
