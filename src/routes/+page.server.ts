@@ -141,16 +141,24 @@ const phoneNumbers = [
   "971523806669"
 ];
 
+const toUTC3String = (timestamp: any): string => {
+  if (!timestamp) return "";
+  return timestamp.toDate().toLocaleString("en-GB", {
+    timeZone: "Etc/GMT-3",
+    hour12: true,
+  });
+}
+
 export const load: PageServerLoad = async ({ params, cookies }) => {
 
 
   for (const status of NewUsers) {
     const ms = await GetDoc("Jadeer", status.phone)
     if (!ms.exists()) {
-     console.log(status)
+      console.log(status)
     }
   }
-console.log({length:NewUsers.length})
+  console.log({ length: NewUsers.length })
 
   //   let notex: string[] = []
   // for (const status of Statues) {
@@ -170,18 +178,30 @@ console.log({length:NewUsers.length})
 
   const userssss = await GetDocs("Jadeer");
   const users = userssss.docs.map((u) => {
-    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed, lastErrorTitle } = u.data();
+    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed, lastErrorTitle,time } = u.data();
     const sss = NewUsers.find((nu) => nu.phone === u.id)
     //  console.log({confirmedAt})
+    // return {
+    //   name, phone: u.id, confirmedAt: confirmedAt ? confirmedAt.toDate().toLocaleString
+    //     () : lastUpdated ? lastUpdated.toDate().toLocaleString() : "",
+    //   deliveredAt: deliveredAt ? deliveredAt.toDate().toLocaleString() : "",
+    //   readAt: readAt ? readAt.toDate().toLocaleString() : "",
+    //   ScanTime: ScanTime ? ScanTime.toDate().toLocaleString() : "",
+    //   failed: failed ? failed ? "Yes" : "NO" : "",
+    //   lastErrorTitle: lastErrorTitle ? lastErrorTitle : "",
+    //   NewPatch: sss !== undefined ? "Yes" : "No"
+    // };
     return {
-      name, phone: u.id, confirmedAt: confirmedAt ? confirmedAt.toDate().toLocaleString
-        () : lastUpdated ? lastUpdated.toDate().toLocaleString() : "",
-      deliveredAt: deliveredAt ? deliveredAt.toDate().toLocaleString() : "",
-      readAt: readAt ? readAt.toDate().toLocaleString() : "",
-      ScanTime: ScanTime ? ScanTime.toDate().toLocaleString() : "",
-      failed: failed ? failed ? "Yes" : "NO" : "",
+      name,
+      phone: u.id,
+      confirmedAt: confirmedAt ? toUTC3String(confirmedAt) : lastUpdated ? toUTC3String(lastUpdated) : "",
+      deliveredAt: toUTC3String(deliveredAt),
+      readAt: toUTC3String(readAt),
+      SlotTime:time,
+      ScanTime: toUTC3String(ScanTime),
+      failed: failed ? "Yes" : "NO",
       lastErrorTitle: lastErrorTitle ? lastErrorTitle : "",
-      NewPatch: sss !== undefined ? "Yes" : "No"
+      NewPatch: sss !== undefined ? "Yes" : "No",
     };
   });
 
