@@ -178,7 +178,7 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
 
   const userssss = await GetDocs("Jadeer");
   const users = userssss.docs.map((u) => {
-    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed, lastErrorTitle,time } = u.data();
+    const { name, confirmedAt, deliveredAt, readAt, lastUpdated, ScanTime, failed, lastErrorTitle, time, ClientName } = u.data();
     const sss = NewUsers.find((nu) => nu.phone === u.id)
     //  console.log({confirmedAt})
     // return {
@@ -197,7 +197,8 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
       confirmedAt: confirmedAt ? toUTC3String(confirmedAt) : lastUpdated ? toUTC3String(lastUpdated) : "",
       deliveredAt: toUTC3String(deliveredAt),
       readAt: toUTC3String(readAt),
-      SlotTime:time,
+      ClientName: ClientName ? ClientName : "",
+      SlotTime: time,
       ScanTime: toUTC3String(ScanTime),
       failed: failed ? "Yes" : "NO",
       lastErrorTitle: lastErrorTitle ? lastErrorTitle : "",
