@@ -2,7 +2,8 @@ import { GetDoc, GetDocs, UpdateDoc } from "$lib/firebase/database/client";
 import { Timestamp } from "firebase/firestore";
 import type { Actions, PageServerLoad } from "./$types";
 import Statues from "./statuses_deduplicated.json";
-import NewUsers from "$lib/NewUsers.json"
+import Users from "$lib/All_Users.json";
+import NewUsers from "$lib/NewUsers.json";
 type Status = {
   "kind": string;
   "status": string;
@@ -191,13 +192,18 @@ export const load: PageServerLoad = async ({ params, cookies }) => {
     //   lastErrorTitle: lastErrorTitle ? lastErrorTitle : "",
     //   NewPatch: sss !== undefined ? "Yes" : "No"
     // };
+
+
+    const user = Users.merged_json.find((r) => r.phone === u.id);
+    const newUser = NewUsers.find((r) => r.phone === u.id);
+
     return {
       name,
       phone: u.id,
       confirmedAt: confirmedAt ? toUTC3String(confirmedAt) : lastUpdated ? toUTC3String(lastUpdated) : "",
       deliveredAt: toUTC3String(deliveredAt),
       readAt: toUTC3String(readAt),
-      ClientName: ClientName ? ClientName : "",
+      ClientName: ClientName ? ClientName : user?.name || newUser?.name,
       SlotTime: time,
       ScanTime: toUTC3String(ScanTime),
       failed: failed ? "Yes" : "NO",
